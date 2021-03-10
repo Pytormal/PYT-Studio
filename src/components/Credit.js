@@ -2,31 +2,45 @@ import './credit.css'
 
 import React from "react";
 
-function Credit() {
-  const creditSource = "Music provided by NoCopyrightSounds";
+import { axiosWithAuth } from "./utils/axiosWithAuth";
 
-  const creditSong =
-    "Song: Julius Dreisig - Where'd You Go (feat. Luna Lark) [NCS Release]";
+class Credit extends React.Component {
+  state = {
+    data: []
+    
+}
 
-  const creditStream = "Free Download/Stream: http://ncs.io/WYG";
+  componentDidMount() {
+    this.getData();
+  }
 
-  const creditWatch = "Watch: http://youtu.be/aWJJEaod34U";
+  getData = () => {
+    this.setState(data);
+    const data = data.map((e) => <p>{e.creditSource}</p>);
+    console.log(data)
+  }
 
+  render() {
+    return (
+      <div className="marquee-wrapper" id="end_credits_container">
+        <div className="end-credits fade">
+          <h1 className="title">Music Source</h1>
 
-  return (
-    <div
-      className="marquee-wrapper"
-      id="end_credits_container">
+          {data.map((music) => (
+            <li>{music.creditSource}</li>
+          ))}
 
-      <div className='end-credits fade'>
-        <h1 className='title'>Music Source</h1>
-        <p>{creditSource}</p>
-        <p>{creditSong}</p>
-        <p>{creditStream}</p>
-        <p>{creditWatch}</p>
+          {/* {data.map((data = <p>{data.creditSource}</p>))} */}
+
+          {/* <p>{data.creditSource}</p>
+        <p>{data.creditSong}</p>
+        <p>{data.creditStream}</p>
+        <p>{data.creditWatch}</p> */}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+  
 }
 
 export default Credit;

@@ -1,12 +1,16 @@
 import './App.css';
 
-import Credit from './components/Credit'
+import Credits from './components/Credits'
+import Form from './components/MusicForm'
 
 function App() {
   return (
+    <>
+      <header><Form/></header>
     <div className="App">
-      <Credit/>
+      <Credits/>
     </div>
+   </>
   );
 }
 
