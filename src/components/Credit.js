@@ -6,13 +6,13 @@ function Credit() {
   const creditSource = "Music provided by NoCopyrightSounds";
 
   const creditSong =
-    "Song: Julius Dreisig - Where'd You Go (feat. Luna Lark) [NCS Release";
+    "Song: Julius Dreisig - Where'd You Go (feat. Luna Lark) [NCS Release]";
 
   const creditStream = "Free Download/Stream: http://ncs.io/WYG";
 
   const creditWatch = "Watch: http://youtu.be/aWJJEaod34U";
 
-  
+
   return (
     <div
       className="marquee-wrapper"
