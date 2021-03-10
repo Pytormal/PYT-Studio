@@ -15,17 +15,10 @@ function Credit() {
   return (
     <div
       className="marquee-wrapper"
-      id="end_credits_container"
-    >
-      <header className="App-header">
-        <nav>
-          <p className="title">Landing Page Nav</p>
-          <section className="links"></section>
-        </nav>
-      </header>
+      id="end_credits_container">
 
-      <div>
-        <h1>Music Source</h1>
+      <div className='end-credits fade'>
+        <h1 className='title'>Music Source</h1>
         <p>{creditSource}</p>
         <p>{creditSong}</p>
         <p>{creditStream}</p>
