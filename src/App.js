@@ -1,7 +1,7 @@
 import './App.css';
 
 
-import Credits from './Credits'
+import Credits from './components/Credits'
 // import Form from './components/MusicForm'
 
 function App() {
