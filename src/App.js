@@ -6,7 +6,7 @@ import Form from './components/MusicForm'
 function App() {
   return (
     <>
-      <header><Form/></header>
+      {/* <header><Form/></header> */}
     <div className="App">
       <Credits/>
     </div>
