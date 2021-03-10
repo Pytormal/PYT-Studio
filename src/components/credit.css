@@ -46,11 +46,11 @@ p {
 
 @keyframes crawl {
     0% {
-        top: 10px;
+        top: 800px;
         transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
-        top: -6000px;
+        top: -1250px;
         transform: rotateX(25deg) translateZ(-2500px);
     }
 }
