@@ -19,7 +19,7 @@ body {
     justify-content: center;
    flex-direction: column;
     height: 800px;
-    color: #feda4a;
+    color: lightblue;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 80%;
     font-weight: 90;
@@ -50,7 +50,7 @@ p {
         transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
-        top: -1250px;
+        top: -1000px;
         transform: rotateX(25deg) translateZ(-200px);
     }
 }
