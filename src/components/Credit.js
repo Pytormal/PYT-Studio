@@ -1,3 +1,5 @@
+import './credit.css'
+
 import React from "react";
 
 function Credit() {
@@ -17,7 +19,7 @@ function Credit() {
     >
       <header className="App-header">
         <nav>
-          <p className="Title">Landing Page Nav</p>
+          <p className="title">Landing Page Nav</p>
           <section className="links"></section>
         </nav>
       </header>

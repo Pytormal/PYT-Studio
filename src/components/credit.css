@@ -28,7 +28,7 @@ body {
     perspective: 400px;
     text-align: center;
 }
-span {
+p {
 	display: block;
 }
 
@@ -46,7 +46,7 @@ span {
 
 @keyframes crawl {
     0% {
-        top: 100px;
+        top: 10px;
         transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
