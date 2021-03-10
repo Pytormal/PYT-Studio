@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 function Credit() {
   const creditSource = "Music provided by NoCopyrightSounds";
@@ -11,7 +11,10 @@ function Credit() {
   const creditWatch = "Watch: http://youtu.be/aWJJEaod34U";
 
   return (
-    <div className="Credit-page">
+    <div
+      className="marquee-wrapper"
+      id="end_credits_container"
+    >
       <header className="App-header">
         <nav>
           <p className="Title">Landing Page Nav</p>
