@@ -27,7 +27,7 @@ const formSchema = yup.object().shape({
 
 export default function RegisterForm() {
   const { path, url } = useRouteMatch();
-  
+
   const [userState, setUserState] = useState({
     user_name: "",
     userName: "",

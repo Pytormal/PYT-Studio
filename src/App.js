@@ -1,4 +1,5 @@
 import "./components/styles/App.css";
+
 import { Link, Route, Switch } from "react-router-dom";
 
 import logout from "./components/utils/logout";
@@ -17,15 +18,14 @@ function App() {
     <>
       <section className="links">
         <Link to="/">Home</Link>
+
         <Link to="/songs_list">List Songs</Link>
 
         <Link to="/login" onClick={logout}>
           Log Out
         </Link>
-        <Link>Test Link</Link>
 
         <Link to="/register">Register Here</Link>
-      
       </section>
 
       <div className="App">
@@ -36,7 +36,9 @@ function App() {
           <Route path="/upload-song">
             <UploadSongs />
           </Route>
-          <Route path='/register'><RegisterForm/></Route>
+          <Route path="/register">
+            <RegisterForm />
+          </Route>
           <Route path="/login">
             <LoginForm />
           </Route>

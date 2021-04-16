@@ -1,5 +1,15 @@
 .song-card {
-  border: 0.5rem solid transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1rem solid transparent;
   padding: 2rem, 0, 2rem, 0;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 150%;
+  font-weight: 200;
+  letter-spacing: 6px;
+  line-height: 100%;
+  perspective: 100px;
+  text-align: center;
 }
