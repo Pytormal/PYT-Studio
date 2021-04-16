@@ -19,14 +19,24 @@ a {
   font-weight: 200;
   margin: 1rem;
 }
-a:default {
+a:link {
+    text-decoration: none;
   color: red;
+  
 }
 a:visited {
+    text-decoration: none;
   color: grey;
 }
 a:hover {
   color: purple;
+   text-decoration: underline;
+}
+a:active {
+  color: turquoise;
+}
+a:enabled {
+  color: mediumspringgreen;
 }
 
 .title-card {
