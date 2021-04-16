@@ -22,6 +22,7 @@ function App() {
         <Link to="/login" onClick={logout}>
           Log Out
         </Link>
+        <Link>Test Link</Link>
 
         <Link to="/register">Register Here</Link>
       
