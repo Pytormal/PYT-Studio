@@ -1,8 +1,10 @@
 import React from "react";
-import "./credit.css";
 
+
+import { Link} from "react-router-dom";
 import { axiosWithAuth } from "./utils/axiosWithAuth";
 
+import "./styles/credit.css";
 // const creditSource = "Music provided by NoCopyrightSounds";
 // const creditSong =
 //   "Song: Julius Dreisig - Where'd You Go (feat. Luna Lark) [NCS Release]";
@@ -56,23 +58,26 @@ class Credits extends React.Component {
 
   render() {
     return (
-      <div className="marquee-wrapper" id="end_credits_container">
-        <div className="end-credits fade">
-          <h1 className="title">Music Source</h1>
-          <div>
-            {this.state.songs.map((song) => {
-              return (
-                <div key={song.music_id}>
-                  <h4>{song.songName}</h4>
-                  <p>{song.musicSource}</p>
-                  <p>{song.Download}</p>
-                  <p>{song.Watch}</p>
-                </div>
-              );
-            })}
+      <>
+        <Link to="/upload-song">Upload Songs here</Link>
+        <div className="marquee-wrapper" id="end_credits_container">
+          <div className="end-credits fade">
+            <h1 className="title">Music Source</h1>
+            <div>
+              {this.state.songs.map((song) => {
+                return (
+                  <div key={song.music_id}>
+                    <h4>{song.songName}</h4>
+                    <p>{song.musicSource}</p>
+                    <p>{song.Download}</p>
+                    <p>{song.Watch}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

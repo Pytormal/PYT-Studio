@@ -1,11 +1,12 @@
-import "./App.css";
+import "./components/styles/App.css";
 import { Link, Route, Switch } from "react-router-dom";
 
 import logout from "./components/utils/logout";
 
-import Home from './components/Home'
+import Home from "./components/Home";
 import Credits from "./components/Credits";
-import LoginForm from './components/utils/LoginForm'
+import UploadSongs from "./components/forms/MusicForm";
+import LoginForm from "./components/forms/LoginForm";
 // import Credit from "./components/Credit";
 
 // import Form from './components/MusicForm'
@@ -16,7 +17,6 @@ function App() {
       <section className="links">
         <Link to="/">Home</Link>
         <Link to="/songs_list">List Songs</Link>
-      
 
         <Link to="/login" onClick={logout}>
           Log Out
@@ -31,7 +31,12 @@ function App() {
           <Route exact path="/songs_list">
             <Credits />
           </Route>
-          <Route path='/login'><LoginForm/></Route>
+          <Route path="/upload-song">
+            <UploadSongs />
+          </Route>
+          <Route path="/login">
+            <LoginForm />
+          </Route>
           <Route path="/">
             <Home />
           </Route>

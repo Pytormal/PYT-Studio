@@ -5,7 +5,7 @@ import axios from 'axios';
 class LoginForm extends React.Component {
 	state = {
 		credentials: {
-			username: '',
+			userName: '',
 			password: '',
 		},
 	};
@@ -22,7 +22,7 @@ class LoginForm extends React.Component {
 	login = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:9500/api/login', this.state.credentials)
+			.post('http://localhost:9500/api/auth/login', this.state.credentials)
 			.then((res) => {
 				localStorage.setItem('token', res.data.payload);
 			
@@ -32,27 +32,26 @@ class LoginForm extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<form
-					onSubmit={(this.login)}
-				>
-					<input
-						type='username'
-						name='username'
-						value={this.state.credentials.username}
-						onChange={this.handleChange}
-					/>
-					<input
-						type='password'
-						name='password'
-						value={this.state.credentials.password}
-						onChange={this.handleChange}
-					/>
-
-					<button>Login</button>
-				</form>
-			</div>
-		);
+      <div>
+        <form onSubmit={this.login}>
+          <h4>username</h4>
+          <input
+            type="userName"
+            name="userName"
+            value={this.state.credentials.userName}
+            onChange={this.handleChange}
+          />
+          <h4>password</h4>
+          <input
+            type="password"
+            name="password"
+            value={this.state.credentials.password}
+            onChange={this.handleChange}
+          />
+          <button>Login</button>
+        </form>
+      </div>
+    );
 	}
 }
 

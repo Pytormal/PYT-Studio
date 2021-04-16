@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import * as yup from "yup";
-import "./formStyle.css";
+import "../styles/formStyle.css";
 
 import {
   Route,
@@ -13,8 +13,8 @@ import {
 
 /*3. Authenticated `user` can Create, Update and Delete a `plant` object. At a minimum, each `plant` must have the following properties: 
     - `id`: Integer
-    - `creditSource`: String
-    - `creditSong` : String
+    - `musicSource`: String
+    - `songName` : String
     - `h2oFrequency`: Type determined by implementation
     - `image`: (optional)
     
@@ -28,25 +28,26 @@ export default function Form() {
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
   const [formState, setFormState] = useState({
-    creditSource: "",
-    creditSong: "",
-    creditStream: "",
-    creditWatch: "",
+    songName: "",
+    musicSource: "",
+    Download: "",
+    Watch: "",
   });
 
   const [errors, setErrors] = useState({
-    creditSource: "",
-    creditSong: "",
-    creditStream: "",
-    creditWatch: "",
+    songName: "",
+    musicSource: "",
+    Download: "",
+    Watch: "",
   });
   const [post, setPost] = useState();
 
   const formSchema = yup.object().shape({
-    creditSource: yup.string().required("Must include provided from."),
-    creditSong: yup.string().required("Must include song."),
-    creditStream: yup.string().required("Must include streaming source."),
-    creditWatch: yup.string().required("Must include youtube source."),
+    
+    songName: yup.string().required("Must include Name."),
+    musicSource: yup.string().required("Must include provided from."),
+    Download: yup.string().required("Must include streaming source."),
+    Watch: yup.string().required("Must include youtube source."),
   });
 
   useEffect(() => {
@@ -58,15 +59,17 @@ export default function Form() {
   const formSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:9500/api/music", formState)
+      .post("http://localhost:9500/api/songs", formState)
       .then((res) => {
         // setPost(res.data); // get just the form data from the REST api
         console.log("music.js", res.data);
         // reset form if successful
         // setFormState({
-        // 	creditSource: '',
-        // 	creditSong: '',
-        // 	creditStream: '',
+     
+        // 	songName: '',  
+        // 	musicSource: '',
+        // 	Download: '',
+        //  Watch: '',
         // });
       })
       .catch((err) => console.log(err.response));
@@ -110,59 +113,59 @@ export default function Form() {
 				</Route> */}
 
       <form className="form-container" onSubmit={formSubmit}>
-        <label className="creditSource music-edit">
-          creditSource
+        <label className="songName music-edit">
+          songName
           <input
-            type="text"
-            name="creditSource"
-            value={formState.creditSource}
+            type="string"
+            name="songName"
+            value={formState.songName}
             onChange={inputChange}
-            placeHolder="plant creditSource"
+            placeHolder="Song Name"
           />
-          {errors.creditSource.length > 0 ? (
-            <p className="error">{errors.creditSource}</p>
+          {errors.songName.length > 0 ? (
+            <p className="error">{errors.songName}</p>
           ) : null}
         </label>
 
-        <label className="creditSong music-edit">
-          creditSong
+        <label className="musicSource music-edit">
+          Source
           <input
-            type="text"
-            name="creditSong"
-            value={formState.creditSong}
+            type="string"
+            name="musicSource"
+            value={formState.musicSource}
             onChange={inputChange}
-            placeHolder="Plant creditSong"
+            placeHolder="song Source"
           />
-          {errors.creditSong.length > 0 ? (
-            <p className="error">{errors.creditSong}</p>
+          {errors.musicSource.length > 0 ? (
+            <p className="error">{errors.musicSource}</p>
           ) : null}
         </label>
 
-        <label className="creditStream music-edit">
-          creditStream
+        <label className="Download music-edit">
+          Download
           <input
-            type="text"
-            name="creditStream"
-            value={formState.creditStream}
+            type="string"
+            name="Download"
+            value={formState.Download}
             onChange={inputChange}
-            placeHolder="Plant creditStream"
+            placeHolder="Download link"
           />
-          {errors.creditStream.length > 0 ? (
-            <p className="error">{errors.creditStream}</p>
+          {errors.Download.length > 0 ? (
+            <p className="error">{errors.Download}</p>
           ) : null}
         </label>
 
-        <label className="creditWatch music-edit">
-          creditWatch
+        <label className="Watch music-edit">
+          Watch
           <input
-            type="text"
-            name="creditWatch"
-            value={formState.creditWatch}
+            type="string"
+            name="Watch"
+            value={formState.Watch}
             onChange={inputChange}
-            placeHolder="Plant creditWatch"
+            placeHolder="Watch link"
           />
-          {errors.creditWatch.length > 0 ? (
-            <p className="error">{errors.creditWatch}</p>
+          {errors.Watch.length > 0 ? (
+            <p className="error">{errors.Watch}</p>
           ) : null}
         </label>
 
