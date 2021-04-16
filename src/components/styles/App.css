@@ -36,7 +36,7 @@ a:active {
   color: turquoise;
 }
 a:enabled {
-  color: mediumspringgreen;
+  color: rgb(76, 42, 230);
 }
 
 .title-card {
