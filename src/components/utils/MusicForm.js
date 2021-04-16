@@ -58,7 +58,7 @@ export default function Form() {
   const formSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/music", formState)
+      .post("http://localhost:9500/api/music", formState)
       .then((res) => {
         // setPost(res.data); // get just the form data from the REST api
         console.log("music.js", res.data);

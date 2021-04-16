@@ -1,17 +1,43 @@
-import './App.css';
+import "./App.css";
+import { Link, Route, Switch } from "react-router-dom";
 
+import logout from "./components/utils/logout";
 
-import Credits from './components/Credits'
+import Home from './components/Home'
+import Credits from "./components/Credits";
+import LoginForm from './components/utils/LoginForm'
+// import Credit from "./components/Credit";
+
 // import Form from './components/MusicForm'
 
 function App() {
   return (
     <>
-      {/* <header><Form/></header> */}
-    <div className="App">
-      <Credits/>
-    </div>
-   </>
+      <section className="links">
+        <Link to="/">Home</Link>
+        <Link to="/songs_list">List Songs</Link>
+      
+
+        <Link to="/login" onClick={logout}>
+          Log Out
+        </Link>
+
+        <Link to="/register">Register Here</Link>
+        {/* <Link to='Add-Plant-protected'>Add Plant</Link> */}
+      </section>
+
+      <div className="App">
+        <Switch>
+          <Route exact path="/songs_list">
+            <Credits />
+          </Route>
+          <Route path='/login'><LoginForm/></Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </>
   );
 }
 
