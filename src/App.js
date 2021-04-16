@@ -6,6 +6,7 @@ import logout from "./components/utils/logout";
 import Home from "./components/Home";
 import Credits from "./components/Credits";
 import UploadSongs from "./components/forms/MusicForm";
+import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 // import Credit from "./components/Credit";
 
@@ -23,7 +24,7 @@ function App() {
         </Link>
 
         <Link to="/register">Register Here</Link>
-        {/* <Link to='Add-Plant-protected'>Add Plant</Link> */}
+      
       </section>
 
       <div className="App">
@@ -34,6 +35,7 @@ function App() {
           <Route path="/upload-song">
             <UploadSongs />
           </Route>
+          <Route path='/register'><RegisterForm/></Route>
           <Route path="/login">
             <LoginForm />
           </Route>

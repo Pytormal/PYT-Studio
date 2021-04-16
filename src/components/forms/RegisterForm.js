@@ -2,42 +2,46 @@ import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import axios from "axios";
 
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+
 const formSchema = yup.object().shape({
-  name: yup
+  user_name: yup
     .string()
-    .min(4, "4 characters minimum for name")
-    .required("Name required"),
-  lastName: yup.string().required("Last Name required"),
+    .min(4, "4 characters minimum for user_name")
+    .required("user_name required"),
+  userName: yup
+    .string()
+    .min(5, "5 characters minimum for your user name")
+    .required("user name required"),
+  password: yup
+    .string()
+    .min(5, "password needs to be more than 5 characters long"),
+  phone: yup.string().matches(phoneRegExp, "Phone number is not valid"),
   email: yup
     .string("@")
     .email("Valid Email needed")
     .required("must include email"),
-  password: yup
-    .string()
-    .min(5, "password needs to be more than 5 characters long"),
-  username: yup
-    .string()
-    .min(5, "5 characters minimum for your user name")
-    .required("user name required"),
   terms: yup.boolean().oneOf([true], "please validate you are human"),
 });
 
 export default function RegisterForm() {
   const [userState, setUserState] = useState({
-    name: "",
-    lastName: "",
-    email: "",
+    user_name: "",
+    userName: "",
     password: "",
-    username: "",
+    phone: "",
+    email: "",
+
     terms: false,
   });
 
   const [errState, setErrState] = useState({
-    name: "",
-    lastName: "",
-    email: "",
+    user_name: "",
+    userName: "",
     password: "",
-    username: "",
+    phone: "",
+    email: "",
+
     terms: "",
   });
 
@@ -80,7 +84,7 @@ export default function RegisterForm() {
     e.preventDefault();
     console.log("form submitted for review");
     axios
-      .post("https://reqres.in/api/users", userState)
+      .post("http://localhost:9500/api/auth/register", userState)
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   };
@@ -88,55 +92,42 @@ export default function RegisterForm() {
   return (
     <form onSubmit={formSubmit}>
       <ul>
-        <label htmlFor="name">
-          Name
+        <label htmlFor="user_name">
+         <h4>Your Name</h4>
           <div>
             <input
-              id="name"
-              type="name"
-              name="name"
+              id="user_name"
+              type="user_name"
+              name="user_name"
               placeholder="Name here"
-              value={userState.name}
+              value={userState.user_name}
               onChange={inputChange}
             />
           </div>
-          {errState.name.length > 6 ? (
-            <p className="error">{errState.name}</p>
+          {errState.user_name.length > 6 ? (
+            <p className="error">{errState.user_name}</p>
           ) : null}
         </label>
-        <label htmlFor="lastName">
-          Last Name
-          <div>
-            <input
-              id="lastName"
-              type="lastName"
-              name="lastName"
-              placeholder="Last Name here"
-              value={userState.lastName}
-              onChange={inputChange}
-            />
-          </div>
-        </label>
 
-        <label htmlFor="email">
-          Email
+        <label htmlFor="userName">
+          <h4>UserName</h4>
           <div>
             <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={userState.email}
+              id="userName"
+              type="userName"
+              name="userName"
+              placeholder="create your user name"
+              value={userState.userName}
               onChange={inputChange}
             />
           </div>
-          {errState.email.length > 0 ? (
-            <p className="error">{errState.email}</p>
+          {errState.userName.length > 5 ? (
+            <p className="error">{errState.userName}</p>
           ) : null}
         </label>
 
         <label htmlFor="password">
-          Password
+         <h4>Password</h4> 
           <div>
             <input
               id="password"
@@ -152,24 +143,39 @@ export default function RegisterForm() {
           ) : null}
         </label>
 
-        <label htmlFor="username">
-          User Name
+        <label htmlFor="phone">
+          <h4>phone</h4>
           <div>
             <input
-              id="username"
-              type="username"
-              name="username"
-              placeholder="create your user name"
-              value={userState.username}
+              id="phone"
+              type="phone"
+              name="phone"
+              placeholder="phone"
+              value={userState.phone}
               onChange={inputChange}
             />
           </div>
+          {errState.phone.length > 6 ? (
+            <p className="error">{errState.phone}</p>
+          ) : null}
         </label>
 
-        {errState.username.length > 5 ? (
-          <p className="error">{errState.username}</p>
-        ) : null}
-
+        <label htmlFor="email">
+          <h4>Email</h4>
+          <div>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={userState.email}
+              onChange={inputChange}
+            />
+          </div>
+          {errState.email.length > 0 ? (
+            <p className="error">{errState.email}</p>
+          ) : null}
+        </label>
         <label htmlFor="validate">
           <div>
             Validate Here
