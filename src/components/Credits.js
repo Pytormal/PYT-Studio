@@ -1,7 +1,6 @@
 import React from "react";
 
-
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { axiosWithAuth } from "./utils/axiosWithAuth";
 
 import "./styles/credit.css";
@@ -46,7 +45,8 @@ class Credits extends React.Component {
 
   getData = () => {
     axiosWithAuth()
-      .get("http://localhost:9500/api/songs")
+      // .get("http://localhost:9500/api/songs")
+      .get("https://overlay-server-api.herokuapp.com/api/songs")
       .then((res) => {
         console.log("Credit List.js: getData: res: ", res.data);
         this.setState({

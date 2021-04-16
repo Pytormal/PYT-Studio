@@ -22,12 +22,12 @@ class LoginForm extends React.Component {
 	login = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:9500/api/auth/login', this.state.credentials)
-			.then((res) => {
-				localStorage.setItem('token', res.data.payload);
-			
-			})
-			.catch((err) => console.error('cannot login to server: ', err.message));
+      // .post('http://localhost:9500/api/auth/login', this.state.credentials)
+      .post("https://overlay-server-api.herokuapp.com/api/auth/login")
+      .then((res) => {
+        localStorage.setItem("token", res.data.payload);
+      })
+      .catch((err) => console.error("cannot login to server: ", err.message));
 	};
 
 	render() {

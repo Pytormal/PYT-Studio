@@ -52,18 +52,18 @@ export default function Form() {
   const formSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:9500/api/songs", formState)
+      // .post("http://localhost:9500/api/songs", formState)
+      .post("https://overlay-server-api.herokuapp.com/api/songs", setFormState)
       .then((res) => {
         // setPost(res.data); // get just the form data from the REST api
         console.log("music.js", res.data);
         // reset form if successful
-        // setFormState({
-
-        // 	songName: '',
-        // 	musicSource: '',
-        // 	Download: '',
-        //  Watch: '',
-        // });
+        setFormState({
+          songName: "",
+          musicSource: "",
+          Download: "",
+          Watch: "",
+        });
       })
       .catch((err) => console.log(err.response));
   };
@@ -99,77 +99,77 @@ export default function Form() {
   return (
     <>
       <Switch>
-				<Route path={`${path}/form-submited`}>
-					<div className='SubmitedText'>
-						<h4>Submited Form </h4>
-					</div>
-				</Route>
+        <Route path={`${path}/form-submited`}>
+          <div className="SubmitedText">
+            <h4>Submited Form </h4>
+          </div>
+        </Route>
 
-      <form className="form-container" onSubmit={formSubmit}>
-        <label className="songName music-edit">
-          songName
-          <input
-            type="string"
-            name="songName"
-            value={formState.songName}
-            onChange={inputChange}
-            placeHolder="Song Name"
-          />
-          {errors.songName.length > 0 ? (
-            <p className="error">{errors.songName}</p>
-          ) : null}
-        </label>
+        <form className="form-container" onSubmit={formSubmit}>
+          <label className="songName music-edit">
+            songName
+            <input
+              type="string"
+              name="songName"
+              value={formState.songName}
+              onChange={inputChange}
+              placeHolder="Song Name"
+            />
+            {errors.songName.length > 0 ? (
+              <p className="error">{errors.songName}</p>
+            ) : null}
+          </label>
 
-        <label className="musicSource music-edit">
-          Source
-          <input
-            type="string"
-            name="musicSource"
-            value={formState.musicSource}
-            onChange={inputChange}
-            placeHolder="song Source"
-          />
-          {errors.musicSource.length > 0 ? (
-            <p className="error">{errors.musicSource}</p>
-          ) : null}
-        </label>
+          <label className="musicSource music-edit">
+            Source
+            <input
+              type="string"
+              name="musicSource"
+              value={formState.musicSource}
+              onChange={inputChange}
+              placeHolder="song Source"
+            />
+            {errors.musicSource.length > 0 ? (
+              <p className="error">{errors.musicSource}</p>
+            ) : null}
+          </label>
 
-        <label className="Download music-edit">
-          Download
-          <input
-            type="string"
-            name="Download"
-            value={formState.Download}
-            onChange={inputChange}
-            placeHolder="Download link"
-          />
-          {errors.Download.length > 0 ? (
-            <p className="error">{errors.Download}</p>
-          ) : null}
-        </label>
+          <label className="Download music-edit">
+            Download
+            <input
+              type="string"
+              name="Download"
+              value={formState.Download}
+              onChange={inputChange}
+              placeHolder="Download link"
+            />
+            {errors.Download.length > 0 ? (
+              <p className="error">{errors.Download}</p>
+            ) : null}
+          </label>
 
-        <label className="Watch music-edit">
-          Watch
-          <input
-            type="string"
-            name="Watch"
-            value={formState.Watch}
-            onChange={inputChange}
-            placeHolder="Watch link"
-          />
-          {errors.Watch.length > 0 ? (
-            <p className="error">{errors.Watch}</p>
-          ) : null}
-        </label>
+          <label className="Watch music-edit">
+            Watch
+            <input
+              type="string"
+              name="Watch"
+              value={formState.Watch}
+              onChange={inputChange}
+              placeHolder="Watch link"
+            />
+            {errors.Watch.length > 0 ? (
+              <p className="error">{errors.Watch}</p>
+            ) : null}
+          </label>
 
-        <pre>{JSON.stringify(post, null, 2)}</pre>
+          <pre>{JSON.stringify(post, null, 2)}</pre>
 
-        <NavLink to={`${url}/form-submited`}>
-        <button onClick={validateChange} disabled={buttonDisabled}>
-          Submit
-        </button>
-        </NavLink>
-      </form>
+          <NavLink to={`${url}/form-submited`}>
+            <button onClick={validateChange} disabled={buttonDisabled}>
+              Submit
+            </button>
+          </NavLink>
+        </form>
       </Switch>
     </>
   );

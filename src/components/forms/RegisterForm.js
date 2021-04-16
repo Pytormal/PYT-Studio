@@ -84,7 +84,8 @@ export default function RegisterForm() {
     e.preventDefault();
     console.log("form submitted for review");
     axios
-      .post("http://localhost:9500/api/auth/register", userState)
+      // .post("http://localhost:9500/api/auth/register", userState)
+      .post("https://overlay-server-api.herokuapp.com/api/auth/register")
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   };
