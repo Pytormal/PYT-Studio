@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import axios from "axios";
+import { useRouteMatch, Switch, Route, NavLink } from "react-router-dom";
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -25,6 +26,8 @@ const formSchema = yup.object().shape({
 });
 
 export default function RegisterForm() {
+  const { path, url } = useRouteMatch();
+  
   const [userState, setUserState] = useState({
     user_name: "",
     userName: "",
@@ -91,118 +94,132 @@ export default function RegisterForm() {
   };
 
   return (
-    <form onSubmit={formSubmit}>
-      <ul>
-        <label htmlFor="user_name">
-         <h4>Your Name</h4>
-          <div>
-            <input
-              id="user_name"
-              type="user_name"
-              name="user_name"
-              placeholder="Name here"
-              value={userState.user_name}
-              onChange={inputChange}
-            />
+    <>
+      <Switch>
+        <Route path={`${path}/form-submited`}>
+          <div className="SubmitedText">
+            <h4>Submited Form </h4>
           </div>
-          {errState.user_name.length > 6 ? (
-            <p className="error">{errState.user_name}</p>
-          ) : null}
-        </label>
+        </Route>
+        <form onSubmit={formSubmit}>
+          <ul>
+            <label htmlFor="user_name">
+              <h4>Your Name</h4>
+              <div>
+                <input
+                  id="user_name"
+                  type="user_name"
+                  name="user_name"
+                  placeholder="Name here"
+                  value={userState.user_name}
+                  onChange={inputChange}
+                />
+              </div>
+              {errState.user_name.length > 6 ? (
+                <p className="error">{errState.user_name}</p>
+              ) : null}
+            </label>
 
-        <label htmlFor="userName">
-          <h4>UserName</h4>
-          <div>
-            <input
-              id="userName"
-              type="userName"
-              name="userName"
-              placeholder="create your user name"
-              value={userState.userName}
-              onChange={inputChange}
-            />
-          </div>
-          {errState.userName.length > 5 ? (
-            <p className="error">{errState.userName}</p>
-          ) : null}
-        </label>
+            <label htmlFor="userName">
+              <h4>UserName</h4>
+              <div>
+                <input
+                  id="userName"
+                  type="userName"
+                  name="userName"
+                  placeholder="create your user name"
+                  value={userState.userName}
+                  onChange={inputChange}
+                />
+              </div>
+              {errState.userName.length > 5 ? (
+                <p className="error">{errState.userName}</p>
+              ) : null}
+            </label>
 
-        <label htmlFor="password">
-         <h4>Password</h4> 
-          <div>
-            <input
-              id="password"
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={userState.password}
-              onChange={inputChange}
-            />
-          </div>
-          {errState.password.length > 6 ? (
-            <p className="error">{errState.password}</p>
-          ) : null}
-        </label>
+            <label htmlFor="password">
+              <h4>Password</h4>
+              <div>
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  value={userState.password}
+                  onChange={inputChange}
+                />
+              </div>
+              {errState.password.length > 6 ? (
+                <p className="error">{errState.password}</p>
+              ) : null}
+            </label>
 
-        <label htmlFor="phone">
-          <h4>phone</h4>
-          <div>
-            <input
-              id="phone"
-              type="phone"
-              name="phone"
-              placeholder="phone"
-              value={userState.phone}
-              onChange={inputChange}
-            />
-          </div>
-          {errState.phone.length > 6 ? (
-            <p className="error">{errState.phone}</p>
-          ) : null}
-        </label>
+            <label htmlFor="phone">
+              <h4>phone</h4>
+              <div>
+                <input
+                  id="phone"
+                  type="phone"
+                  name="phone"
+                  placeholder="phone"
+                  value={userState.phone}
+                  onChange={inputChange}
+                />
+              </div>
+              {errState.phone.length > 6 ? (
+                <p className="error">{errState.phone}</p>
+              ) : null}
+            </label>
 
-        <label htmlFor="email">
-          <h4>Email</h4>
-          <div>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={userState.email}
-              onChange={inputChange}
-            />
-          </div>
-          {errState.email.length > 0 ? (
-            <p className="error">{errState.email}</p>
-          ) : null}
-        </label>
-        <label htmlFor="validate">
-          <div>
-            Validate Here
-            <input
-              type="checkbox"
-              id="terms"
-              name="terms"
-              checked={userState.terms}
-              onChange={inputChange}
-            />
-          </div>
+            <label htmlFor="email">
+              <h4>Email</h4>
+              <div>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value={userState.email}
+                  onChange={inputChange}
+                />
+              </div>
+              {errState.email.length > 0 ? (
+                <p className="error">{errState.email}</p>
+              ) : null}
+            </label>
+            <label htmlFor="validate">
+              <div>
+                Validate Here
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="terms"
+                  checked={userState.terms}
+                  onChange={inputChange}
+                />
+              </div>
 
-          {errState.terms.length > 1 ? (
-            <p className="error">{errState.terms}</p>
-          ) : null}
-        </label>
+              {errState.terms.length > 1 ? (
+                <p className="error">{errState.terms}</p>
+              ) : null}
+            </label>
+          </ul>
 
-        <button
-          type="submit"
-          id="submit"
-          name="submit"
-          disabled={!buttonDisabled}
-        >
-          Submit
-        </button>
-      </ul>
-    </form>
+          <NavLink to={`${url}/form-submited`}>
+            {/* <button onClick={validateChange} disabled={buttonDisabled}>
+              Submit
+            </button> */}
+            <button
+              type="submit"
+              id="submit"
+              name="submit"
+              disabled={!buttonDisabled}
+            >
+              Submit
+            </button>
+          </NavLink>
+        </form>
+      </Switch>
+    </>
   );
 }
