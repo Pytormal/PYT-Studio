@@ -3,13 +3,7 @@ import axios from "axios";
 import * as yup from "yup";
 import "../styles/formStyle.css";
 
-import {
-  Route,
-  Switch,
-  NavLink,
-  useParams,
-  useRouteMatch,
-} from "react-router-dom";
+import { useRouteMatch, Switch, Route, NavLink } from "react-router-dom";
 
 /*3. Authenticated `user` can Create, Update and Delete a `plant` object. At a minimum, each `plant` must have the following properties: 
     - `id`: Integer
@@ -40,10 +34,9 @@ export default function Form() {
     Download: "",
     Watch: "",
   });
-  const [post, setPost] = useState();
+  const [post] = useState();
 
   const formSchema = yup.object().shape({
-    
     songName: yup.string().required("Must include Name."),
     musicSource: yup.string().required("Must include provided from."),
     Download: yup.string().required("Must include streaming source."),
@@ -54,7 +47,7 @@ export default function Form() {
     formSchema.isValid(formState).then((valid) => {
       setButtonDisabled(!valid);
     });
-  }, [formState]);
+  }, [formState, formSchema]);
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -65,8 +58,8 @@ export default function Form() {
         console.log("music.js", res.data);
         // reset form if successful
         // setFormState({
-     
-        // 	songName: '',  
+
+        // 	songName: '',
         // 	musicSource: '',
         // 	Download: '',
         //  Watch: '',
@@ -105,12 +98,12 @@ export default function Form() {
   };
   return (
     <>
-      {/* <Switch>
+      <Switch>
 				<Route path={`${path}/form-submited`}>
 					<div className='SubmitedText'>
 						<h4>Submited Form </h4>
 					</div>
-				</Route> */}
+				</Route>
 
       <form className="form-container" onSubmit={formSubmit}>
         <label className="songName music-edit">
@@ -171,13 +164,13 @@ export default function Form() {
 
         <pre>{JSON.stringify(post, null, 2)}</pre>
 
-        {/* <NavLink to={`${url}/form-submited`}> */}
+        <NavLink to={`${url}/form-submited`}>
         <button onClick={validateChange} disabled={buttonDisabled}>
           Submit
         </button>
-        {/* </NavLink> */}
+        </NavLink>
       </form>
-      {/* </Switch> */}
+      </Switch>
     </>
   );
 }
