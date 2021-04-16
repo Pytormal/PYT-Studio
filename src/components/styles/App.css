@@ -8,10 +8,25 @@ html {
   font-size: calc(10px + 2vmin);
   color: crimson;
 }
-.links{display: flex;
-  justify-content: center;}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
 a {
+  font-size: 150%;
+  font-weight: 200;
   margin: 1rem;
+}
+a:default {
+  color: red;
+}
+a:visited {
+  color: grey;
+}
+a:hover {
+  color: purple;
 }
 
 .title-card {

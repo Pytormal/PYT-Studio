@@ -7,7 +7,7 @@ class Credits extends React.Component {
       <div className="title-wrapper" id="title_container">
         <div className="title-card">
           <h1 className="title">Landing Page Here</h1>
-          <div className="links">
+          <div className="home-links links">
             <Link to="/login">Login</Link>
             <Link to="/upload-song">Upload Songs here</Link>
           </div>
