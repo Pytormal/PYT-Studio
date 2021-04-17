@@ -32,7 +32,6 @@ class Credits extends React.Component {
   state = {
     songs: [],
     newSong: {
-      song_id: Date.now(),
       songName: "",
       musicSource: "",
       Download: "",

@@ -5,6 +5,7 @@ import { Link, Route, Switch } from "react-router-dom";
 import logout from "./components/utils/logout";
 
 import Home from "./components/Home";
+import Song from './components/Song'
 import Credits from "./components/Credits";
 import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
@@ -30,8 +31,11 @@ function App() {
 
       <div className="App">
         <Switch>
+          <Route path="/songs_list/:music_id">
+            <Song props={Credits} />
+          </Route>
           <Route exact path="/songs_list">
-            <Credits />
+            <Credits credits={Credits} />
           </Route>
           <Route path="/upload-song">
             <UploadSongs />
