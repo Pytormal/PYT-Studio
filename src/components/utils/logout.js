@@ -2,7 +2,7 @@ import {axiosWithAuth} from './axiosWithAuth'
 
 const logout = () => {
   axiosWithAuth()
-    .post("/logout")
+    .get("/auth/logout")
     .catch((err) => console.error("cannot log you out, try again"));
   localStorage.removeItem("token");
 };

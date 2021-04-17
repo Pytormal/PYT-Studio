@@ -4,9 +4,9 @@ export const axiosWithAuth = () => {
 	const token = localStorage.getItem('token');
 
 	return axios.create({
-		headers: {
-			authorization: token,
-		},
-		baseURL: 'http://localhost:9500/api',
-	});
+    headers: {
+      authorization: token,
+    },
+    baseURL: "https://overlay-server-api.herokuapp.com/api",
+  });
 };

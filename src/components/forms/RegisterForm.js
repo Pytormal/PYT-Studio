@@ -88,7 +88,7 @@ export default function RegisterForm() {
     console.log("form submitted for review");
     axios
       // .post("http://localhost:9500/api/auth/register", userState)
-      .post("https://overlay-server-api.herokuapp.com/api/auth/register")
+      .post("/auth/register")
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   };
@@ -127,7 +127,7 @@ export default function RegisterForm() {
                   id="userName"
                   type="userName"
                   name="userName"
-                  placeholder="create your user name"
+                  placeholder="create your username"
                   value={userState.userName}
                   onChange={inputChange}
                 />
