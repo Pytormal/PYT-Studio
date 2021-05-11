@@ -127,7 +127,7 @@ function Form() {
         <Route path={`${path}/form-submited`}>
           <div className="SubmitedText">
             <h4>Submited Form </h4>
-            <Link to="Poll-hub/Polls">return to previous page</Link>
+            <Link to={`${path}`}>return to previous page</Link>
           </div>
         </Route>
 
@@ -211,12 +211,12 @@ function Form() {
             ) : null} */}
           </section>
 
-          <pre className='message-box'>
-            ▼ you may need to refresh this page if this ▼ confirmation box ▼ has not been
-            reset if you wish to submit another form ▼
+          <pre className="message-box">
+            ▼ you may need to refresh this page if this ▼ confirmation box ▼ has
+            not been reset if you wish to submit another form ▼
           </pre>
 
-          <pre className='JSONString'>{JSON.stringify(formState)}</pre>
+          <pre className="JSONString">{JSON.stringify(formState)}</pre>
 
           <button
             type="submit"
