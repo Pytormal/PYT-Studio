@@ -10,6 +10,7 @@ import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from './components/PollHome'
+
 // import Credit from "./components/Credit";
 
 // STYLES //
@@ -19,6 +20,8 @@ import "./components/styles/home.css";
 import "./components/styles/formStyle.css";
 // import "./components/styles/credit.css";
 import "./components/styles/song-list.css";
+import "./components/styles/polls.css";
+import "./components/styles/responsive.css";
 
 function App() {
   return (

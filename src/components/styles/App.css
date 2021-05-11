@@ -34,7 +34,7 @@ a {
   color: rgb(209, 72, 202);
   text-decoration: none;
   padding: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 
 a:hover {
@@ -42,9 +42,10 @@ a:hover {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 p {
   display: block;
+   font-size: 2rem;
 }
