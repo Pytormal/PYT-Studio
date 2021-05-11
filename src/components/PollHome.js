@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
 import PollsForm from "./Polls/PollsForm";
 
@@ -24,7 +24,9 @@ class PollHome extends React.Component {
                 <p className="home-p">
                   to the Hub of all things Polls
                   <span> what would you like to do?</span>
+                 
                 </p>
+                <Link to='/Polls-hub/Polls'>click to complete the poll</Link>
               </Route>
             </Switch>
           </section>
