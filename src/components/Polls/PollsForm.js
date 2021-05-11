@@ -181,7 +181,7 @@ function Form() {
             </section>
 
             <section className="interested options-wrapper">
-              <h4>Would you be interested in Watching this stream?</h4>
+              <h4>Would you be interested in Watching this stream that was mention in the post?</h4>
               <br />
               <label className="Yes radio" for="Yes">
                 <h5>
