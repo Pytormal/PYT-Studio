@@ -42,8 +42,8 @@ class Credits extends React.Component {
 
   getData = () => {
     axiosWithAuth()
-      .get("http://localhost:9500/api/songs")
-      // .get("https://overlay-server-api.herokuapp.com/api/songs")
+      // .get("http://localhost:9500/api/songs")
+      .post("https://overlay-server-api.herokuapp.com/api/songs")
       .then((res) => {
         console.log("Credit List.js: getData: res: ", res.data);
         this.setState({

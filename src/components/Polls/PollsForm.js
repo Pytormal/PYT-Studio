@@ -72,10 +72,9 @@ function Form() {
     console.log("form submitted for review");
     // e.preventDefault();
 
-   axiosWithAuth
-
+   axiosWithAuth()
      // .post("http://localhost:9500/api/polls", formState)
-     .post("/polls", formState)
+     .post("https://overlay-server-api.herokuapp.com/api/polls", formState)
      .then((response) => console.log(response))
      .catch((err) => console.log(err));
   };
