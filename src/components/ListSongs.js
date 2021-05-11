@@ -1,10 +1,7 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { axiosWithAuth } from "./utils/axiosWithAuth";
 
-// import "./styles/credit.css";
-import "./styles/song-list.css";
 // const creditSource = "Music provided by NoCopyrightSounds";
 // const creditSong =
 //   "Song: Julius Dreisig - Where'd You Go (feat. Luna Lark) [NCS Release]";
@@ -45,8 +42,8 @@ class Credits extends React.Component {
 
   getData = () => {
     axiosWithAuth()
-      // .get("http://localhost:9500/api/songs")
-      .get("https://overlay-server-api.herokuapp.com/api/songs")
+      .get("http://localhost:9500/api/songs")
+      // .get("https://overlay-server-api.herokuapp.com/api/songs")
       .then((res) => {
         console.log("Credit List.js: getData: res: ", res.data);
         this.setState({
@@ -56,19 +53,31 @@ class Credits extends React.Component {
       .catch((err) => console.error("Unable to retrieve data: ", err.message));
   };
 
+
   render() {
     return (
       <>
         <Link to="/upload-song">Upload Songs here</Link>
-        <div className="song-marquee-wrapper song-wrapper" id="song_credits_container">
+        <div
+          className="song-marquee-wrapper song-wrapper"
+          id="song_credits_container"
+        >
           <div className="song-credits fade">
-            <h1 className="title">Music Source</h1>
-            <div className='card-space'>
+          
+                <h1 className="title">
+                  <p>Music provided by NoCopyrightSounds</p>
+                </h1>
+         
+
+            <div className="card-space">
               {this.state.songs.map((song) => {
                 return (
-                  <div className='song-card'key={song.music_id}>
-                    <h4>{song.songName}</h4>
-                    <p>{song.musicSource}</p>
+                  <div className="song-card" key={song.music_id}>
+                    <h4>
+                      {/* <span>{song.music_id} </span> */}
+                      {song.songName}
+                    </h4>
+                    {/* <p>{song.musicSource}</p> */}
                     <p>{song.Download}</p>
                     <p>{song.Watch}</p>
                   </div>

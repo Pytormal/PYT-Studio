@@ -2,9 +2,6 @@ import React from "react";
 
 import { axiosWithAuth } from "./utils/axiosWithAuth";
 
-// import "./styles/credit.css";
-import "./styles/song-list.css";
-
 
 class Song extends React.Component {
   state = {

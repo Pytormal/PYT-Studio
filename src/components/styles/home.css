@@ -1,0 +1,13 @@
+.title{
+    padding:1rem;
+    margin:.5rem;
+}
+
+.home-p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+
+span{margin-left: .5rem;}

@@ -1,14 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class Credits extends React.Component {
+
+// let user_name= 'Alex Andrew'
+
+class Home extends React.Component {
+
+
   render() {
+    // let user = JSON.parse(sessionStorage.getItem('userName'))
     return (
       <div className="title-wrapper" id="title_container">
         <div className="title-card">
-          <h1 className="title">Landing Page Here</h1>
+          <section>
+            <h1 className="title">
+              Welcome
+              {/* {user.userName} */}
+            </h1>
+
+            <p className="home-p">what would you like to do?</p>
+          </section>
+
           <div className="home-links links">
             <Link to="/login">Login</Link>
+            <Link to="/Polls-hub">Polls Hub</Link>
             <Link to="/upload-song">Upload Songs here</Link>
           </div>
         </div>
@@ -17,4 +32,4 @@ class Credits extends React.Component {
   }
 }
 
-export default Credits;
+export default Home;

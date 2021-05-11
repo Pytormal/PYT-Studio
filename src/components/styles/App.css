@@ -1,12 +1,28 @@
 html {
+  display: flex;
   background-color: transparent;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 10px;
   color: crimson;
+  background: transparent;
+  /* overflow: hidden; */
+
+}  
+ ::-webkit-scrollbar{display:none}
+
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+ 
+}
+
+body {
+  margin: 2.2rem 0 0 0;
+  padding: 1rem;
+  width: 100%;
 }
 
 .links {
@@ -15,34 +31,20 @@ html {
 }
 
 a {
-  font-size: 150%;
-  font-weight: 200;
-  margin: 1rem;
-}
-a:link {
-    text-decoration: none;
-  color: red;
-  
-}
-a:visited {
-    text-decoration: none;
-  color: grey;
-}
-a:hover {
-  color: purple;
-   text-decoration: underline;
-}
-a:active {
-  color: turquoise;
-}
-a:enabled {
-  color: rgb(76, 42, 230);
+  color: rgb(209, 72, 202);
+  text-decoration: none;
+  padding: 1.5rem;
+  font-size: 1.6rem;
 }
 
-.title-card {
-  font-size: 150%;
-  font-weight: 200;
-  letter-spacing: 6px;
-  line-height: 100%;
-  perspective: 100px;
+a:hover {
+  color: goldenrod;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+p {
+  display: block;
 }

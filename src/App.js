@@ -1,18 +1,24 @@
-import "./components/styles/App.css";
-
 import { Link, Route, Switch } from "react-router-dom";
+import PrivateRoute from "./components/utils/PrivateRoute";
 
 import logout from "./components/utils/logout";
 
 import Home from "./components/Home";
-import Song from './components/Song'
-import Credits from "./components/Credits";
+import Song from "./components/Song";
+import ListSongs from "./components/ListSongs";
 import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
+import PollHome from './components/PollHome'
 // import Credit from "./components/Credit";
 
-// import Form from './components/MusicForm'
+// STYLES //
+import "./components/styles/reset.css";
+import "./components/styles/App.css";
+import "./components/styles/home.css";
+import "./components/styles/formStyle.css";
+// import "./components/styles/credit.css";
+import "./components/styles/song-list.css";
 
 function App() {
   return (
@@ -30,16 +36,23 @@ function App() {
       </section>
 
       <div className="App">
-        <Switch>
+        <Switch className="pick">
           <Route path="/songs_list/:music_id">
-            <Song props={Credits} />
+            <Song props={ListSongs} />
           </Route>
           <Route exact path="/songs_list">
-            <Credits credits={Credits} />
+            <ListSongs props={ListSongs} />
           </Route>
-          <Route path="/upload-song">
-            <UploadSongs />
+          <Route path='/Polls-hub'>
+            <PollHome/>
           </Route>
+
+          <PrivateRoute
+            exact
+            path="/upload-song"
+            component={UploadSongs}
+          ></PrivateRoute>
+
           <Route path="/register">
             <RegisterForm />
           </Route>

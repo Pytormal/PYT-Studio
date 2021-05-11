@@ -1,15 +1,13 @@
-.song-card {
+.song-wrapper {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  border: 1rem solid transparent;
-  padding: 2rem, 0, 2rem, 0;
-  margin-bottom: 4rem;
-  font-family: "Pathway Gothic One", sans-serif;
-  font-size: 150%;
-  font-weight: 200;
-  letter-spacing: 6px;
-  line-height: 100%;
-  perspective: 100px;
-  text-align: center;
+}
+
+.song-card {
+  height: auto;
+  margin: 2.2rem 0 0 0;
+  padding: 1rem;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
 }

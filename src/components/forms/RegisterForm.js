@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import axios from "axios";
-import { useRouteMatch, Switch, Route, NavLink } from "react-router-dom";
+import { useRouteMatch, Switch, Route } from "react-router-dom";
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
@@ -87,8 +87,8 @@ export default function RegisterForm() {
     e.preventDefault();
     console.log("form submitted for review");
     axios
-      // .post("http://localhost:9500/api/auth/register", userState)
-      .post("/auth/register")
+      .post("http://localhost:9500/api/auth/register", userState)
+      // .post("/auth/register", userState)
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   };
@@ -101,39 +101,23 @@ export default function RegisterForm() {
             <h4>Submited Form </h4>
           </div>
         </Route>
+
         <form onSubmit={formSubmit}>
           <ul>
-            <label htmlFor="user_name">
-              <h4>Your Name</h4>
+            <label htmlFor="name">
+              <h4>User Name</h4>
               <div>
                 <input
                   id="user_name"
                   type="user_name"
                   name="user_name"
-                  placeholder="Name here"
+                  placeholder="create your username"
                   value={userState.user_name}
                   onChange={inputChange}
                 />
               </div>
               {errState.user_name.length > 6 ? (
                 <p className="error">{errState.user_name}</p>
-              ) : null}
-            </label>
-
-            <label htmlFor="userName">
-              <h4>UserName</h4>
-              <div>
-                <input
-                  id="userName"
-                  type="userName"
-                  name="userName"
-                  placeholder="create your username"
-                  value={userState.userName}
-                  onChange={inputChange}
-                />
-              </div>
-              {errState.userName.length > 5 ? (
-                <p className="error">{errState.userName}</p>
               ) : null}
             </label>
 
@@ -151,6 +135,23 @@ export default function RegisterForm() {
               </div>
               {errState.password.length > 6 ? (
                 <p className="error">{errState.password}</p>
+              ) : null}
+            </label>
+
+            <label htmlFor="userName">
+              <h4>Your Name</h4>
+              <div>
+                <input
+                  id="userName"
+                  type="userName"
+                  name="userName"
+                  placeholder="Name here"
+                  value={userState.userName}
+                  onChange={inputChange}
+                />
+              </div>
+              {errState.userName.length > 5 ? (
+                <p className="error">{errState.userName}</p>
               ) : null}
             </label>
 
@@ -204,20 +205,19 @@ export default function RegisterForm() {
               ) : null}
             </label>
           </ul>
-
-          <NavLink to={`${url}/form-submited`}>
-            {/* <button onClick={validateChange} disabled={buttonDisabled}>
+          {/* <pre>{JSON.stringify(userState)}</pre> */}
+          {/* <button onClick={validateChange} disabled={buttonDisabled}>
               Submit
             </button> */}
-            <button
-              type="submit"
-              id="submit"
-              name="submit"
-              disabled={!buttonDisabled}
-            >
-              Submit
-            </button>
-          </NavLink>
+          <button
+            type="submit"
+            id="submit"
+            name="submit"
+            disabled={!buttonDisabled}
+            to={`${url}/form-submited`}
+          >
+            Submit
+          </button>
         </form>
       </Switch>
     </>

@@ -1,29 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import * as yup from "yup";
-import "../styles/formStyle.css";
 
 import { useRouteMatch, Switch, Route, NavLink } from "react-router-dom";
 
-/*3. Authenticated `user` can Create, Update and Delete a `plant` object. At a minimum, each `plant` must have the following properties: 
-    - `id`: Integer
-    - `musicSource`: String
-    - `songName` : String
-    - `h2oFrequency`: Type determined by implementation
-    - `image`: (optional)
-    
-    Authenticated user can view a list of created plants.  
-    A plant can be deleted or selected to present user with a detail view where user can then update any property of the selected plant. 
-    */
-
-export default function Form() {
+export default function PollsForm() {
   const { path, url } = useRouteMatch();
 
   const [buttonDisabled, setButtonDisabled] = useState(true);
 
   const [formState, setFormState] = useState({
     songName: "",
-    musicSource: "",
+    musicSource: "Music provided by NoCopyrightSounds",
     Download: "",
     Watch: "",
   });
@@ -38,7 +26,11 @@ export default function Form() {
 
   const formSchema = yup.object().shape({
     songName: yup.string().required("Must include Name."),
-    musicSource: yup.string().required("Must include provided from."),
+    musicSource: yup
+      .string()
+      .required(
+        "Must include 'Music provided by NoCopyrightSounds' if songs are from NCS"
+      ),
     Download: yup.string().required("Must include streaming source."),
     Watch: yup.string().required("Must include youtube source."),
   });
@@ -113,7 +105,7 @@ export default function Form() {
               name="songName"
               value={formState.songName}
               onChange={inputChange}
-              placeHolder="Song Name"
+              placeholder="Song Name"
             />
             {errors.songName.length > 0 ? (
               <p className="error">{errors.songName}</p>
@@ -127,7 +119,7 @@ export default function Form() {
               name="musicSource"
               value={formState.musicSource}
               onChange={inputChange}
-              placeHolder="song Source"
+              placeholder="song Source"
             />
             {errors.musicSource.length > 0 ? (
               <p className="error">{errors.musicSource}</p>
@@ -141,7 +133,7 @@ export default function Form() {
               name="Download"
               value={formState.Download}
               onChange={inputChange}
-              placeHolder="Download link"
+              placeholder="Download link"
             />
             {errors.Download.length > 0 ? (
               <p className="error">{errors.Download}</p>
@@ -155,7 +147,7 @@ export default function Form() {
               name="Watch"
               value={formState.Watch}
               onChange={inputChange}
-              placeHolder="Watch link"
+              placeholder="Watch link"
             />
             {errors.Watch.length > 0 ? (
               <p className="error">{errors.Watch}</p>
