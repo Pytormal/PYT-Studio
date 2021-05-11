@@ -20,11 +20,12 @@
     display: none;
   }
 }
-@media (max-width: 730px) {
+@media (max-width: 786px) {
   .options-wrapper > h4 {
     font-size: 1.6rem;
   }
 }
+
 @media (max-width: 596px) {
   .options-wrapper > h4 {
     font-size: 1.4rem;
