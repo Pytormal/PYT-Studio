@@ -13,10 +13,10 @@ class PollHome extends React.Component {
         <div className="title-card">
           <section>
             <Switch className="pick">
-              <Route path="/Polls-hub/Polls">
+              <Route path="/polls-hub/polls">
                 <PollsForm />
               </Route>
-              <Route path="/Polls-hub">
+              <Route path="/polls-hub">
                 <h1 className="title">
                   Welcome
                   {/* {user.userName} */}
@@ -26,7 +26,7 @@ class PollHome extends React.Component {
                   <span> what would you like to do?</span>
                  
                 </p>
-                <Link to='/Polls-hub/Polls'>click to complete the poll</Link>
+                <Link to='/polls-hub/polls'>click to complete the poll</Link>
               </Route>
             </Switch>
           </section>
