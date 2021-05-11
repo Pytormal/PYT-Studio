@@ -75,7 +75,7 @@ function Form() {
     axios
 
       // .post("http://localhost:9500/api/polls", formState)
-      .post("/polls", formState)
+      .post("/api/polls", formState)
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   };
