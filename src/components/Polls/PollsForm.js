@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { axiosWithAuth } from "../utils/axiosWithAuth";
 import * as yup from "yup";
 
 import { useRouteMatch, Switch, Route, NavLink, Link } from "react-router-dom";
@@ -72,12 +72,12 @@ function Form() {
     console.log("form submitted for review");
     // e.preventDefault();
 
-    axios
+   axiosWithAuth
 
-      // .post("http://localhost:9500/api/polls", formState)
-      .post("/api/polls", formState)
-      .then((response) => console.log(response))
-      .catch((err) => console.log(err));
+     // .post("http://localhost:9500/api/polls", formState)
+     .post("/polls", formState)
+     .then((response) => console.log(response))
+     .catch((err) => console.log(err));
   };
 
   const { path, url } = useRouteMatch();
