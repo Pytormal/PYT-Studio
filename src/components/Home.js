@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import startTimer from "./timer.js"
+import StartTimer from "./timer.js"
 
 
 // let user_name= 'Alex Andrew'
@@ -28,7 +28,8 @@ class Home extends React.Component {
             <Link to="/upload-song">Upload Songs here</Link>
           </div>
             <h1 id="header" >Stream Starting in . . . </h1>
-<div id="timer"><startTimer/> Timer Goes Here, requires JavaScript</div>
+           
+<div id="timer">  < StartTimer /> Timer Goes Here, requires JavaScript</div>
         </div>
       </div>
     );

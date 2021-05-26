@@ -1,8 +1,8 @@
 document.getElementById('timer').innerHTML =
   10 + ":" + 10;
-startTimer();
+StartTimer();
 
-export function startTimer() {
+export function StartTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
@@ -24,7 +24,7 @@ export function startTimer() {
   document.getElementById('timer').innerHTML =
     m + ":" + s;
   console.log(m)
-  setTimeout(startTimer, 1000);
+  setTimeout(StartTimer, 1000);
 }
 
 function checkSecond(sec) {
