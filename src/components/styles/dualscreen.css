@@ -5,32 +5,21 @@
     flex-direction: row-reverse;
   }
 
-  .title-wrapperlinks {
+  .App {
     flex-basis: calc(env(fold-left) - 60px);
     margin-inline-end: env(fold-width);
   }
 
-  .welcome-title {
+  .left-links {
     flex: 0 0 env(fold-left);
     /* margin-inline-start: env(fold-width); */
     justify-content: space-between;
     overflow-y: scroll;
   }
 
-  .welcome-title {
+  .App {
     flex-basis: calc(100vw - (env(fold-left) + env(fold-width)));
     margin: 0.5rem;
-  }
-  .links {
-    flex: 1;
-    margin: 0;
-    overflow: hidden;
-  }
-  .links {
-    height: 5rem;
-  }
-  .links {
-    text-align: end;
   }
 }
 
@@ -41,25 +30,18 @@
     flex-direction: column;
   }
 
-  .welcome-title {
+  .left-links {
     height: 350px;
     font-size: 1rem;
   }
-  .welcome-title,
-  .title-wrapper {
+  .left-links,
+  .App {
     margin-inline-start: env(fold-height);
     overflow-y: scroll;
   }
 
-  .home-links {
-    flex: 1;
-    margin-top: 14rem;
-    overflow: hidden;
-    height: 2rem;
+  .App {
     width: 90%;
-  }
-  .clr-btn {
-    height: 4rem;
   }
 }
 

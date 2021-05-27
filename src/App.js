@@ -29,7 +29,8 @@ import "./components/styles/dualscreen.css"
 function App() {
   return (
     <>
-      <section className="links">
+      <section id="split">\
+      <section className="left-links links">
         <Link to="/">Home</Link>
 
         <Link to="/songs_list">List Songs</Link>
@@ -75,6 +76,8 @@ function App() {
           </Route>
         </Switch>
       </div>
+      </section>
+      
     </>
   );
 }
