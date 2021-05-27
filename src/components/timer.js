@@ -15,10 +15,8 @@ export function Min5Timer() {
   return (
     <>
       <div id="timer">
-        <h6 id="timer-header">
-          5 Minutes is 300 Seconds,
-          <h2 className="timer-title">Quick Break</h2> Be Back Soon
-        </h6>
+        <h6 id="timer-header">5 Minutes is 300 Seconds,</h6>
+        <h2 className="timer-title">Quick Break, Be Back Soon</h2>
         {counter}
       </div>
     </>
@@ -31,20 +29,17 @@ export function Min10Timer() {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
   }, [counter]);
 
-  if (counter===0) {
+  if (counter === 0) {
     let headline = document.getElementById("timer");
-    
 
-     headline.innerText = "Starting Soon";
+    headline.innerText = "Starting Soon";
   }
 
   return (
     <>
       <div id="timer">
-        <h6 id="timer-header">
-          10 Minutes is 600 Seconds,
-          <h2 className="timer-title">Stream Starting Soon</h2>
-        </h6>
+        <h6 id="timer-header">10 Minutes is 600 Seconds,</h6>
+        <h2 className="timer-title">Stream Starting Soon</h2>
         {counter}
       </div>
     </>
@@ -57,26 +52,22 @@ export function Min30Timer() {
     counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
   }, [counter]);
 
-  if (counter===0) {
+  if (counter === 0) {
     let headline = document.getElementById("timer");
-    
 
-     headline.innerText = "Starting Soon";
+    headline.innerText = "Starting Soon";
   }
 
   return (
     <>
       <div id="timer">
-        <h6 id="timer-header">
-          30 Minutes is 1800 Seconds, <h2 className="timer-title">Intermission</h2> Be Back Soon
-        </h6>
+        <h6 id="timer-header">30 Minutes is 1800 Seconds, </h6>
+        <h2 className="timer-title">Intermission, Be Back Soon</h2>
         {counter}
       </div>
     </>
   );
 }
-
-
 
 // if(m<0){alert('timer completed')}
 //   if (m < 0) {

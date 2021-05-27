@@ -1,19 +1,22 @@
 #timer-header{
     color:red;
 font-size:3.2rem;
+margin-bottom:2rem;
 }
 
 .timer-title{
-    padding:2rem;
+    padding:1rem;
     color:lightgreen;
+    font-size:4rem;
 }
 
 #timer {
     display:flex;
+margin-top:25%;
    color:blue;
   font-size:6rem;
   flex-direction: column;
  align-items:center;
-justify-content: space-evenly;
-  height:50vh;
+height:60vh;
+  
 }
