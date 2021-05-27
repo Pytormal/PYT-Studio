@@ -44,7 +44,7 @@ export function Min10Timer() {
         <h6 id="timer-header">
           10 Minutes is 600 Seconds,
           <h2 className="timer-title">Stream Starting Soon</h2>
-        </h6>{" "}
+        </h6>
         {counter}
       </div>
     </>

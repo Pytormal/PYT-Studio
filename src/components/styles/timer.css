@@ -1,6 +1,6 @@
 #timer-header{
     color:red;
-height:-50vh;
+font-size:3.2rem;
 }
 
 .timer-title{
@@ -11,7 +11,7 @@ height:-50vh;
 #timer {
     display:flex;
    color:blue;
-  font-size:4rem;
+  font-size:6rem;
   flex-direction: column;
  align-items:center;
 justify-content: space-evenly;
