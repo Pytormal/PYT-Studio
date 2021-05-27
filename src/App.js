@@ -10,6 +10,8 @@ import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from './components/PollHome'
+import {Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
+
 
 // import Credit from "./components/Credit";
 
@@ -46,8 +48,13 @@ function App() {
           <Route exact path="/songs_list">
             <ListSongs props={ListSongs} />
           </Route>
-          <Route path='/Polls-hub'>
-            <PollHome/>
+          <Route path="/Polls-hub">
+            <PollHome />
+          </Route>
+          <Route path="/timers">
+            <Min5Timer/>
+            <Min10Timer />
+            <Min30Timer />
           </Route>
 
           <PrivateRoute
