@@ -24,6 +24,7 @@ import "./components/styles/formStyle.css";
 import "./components/styles/song-list.css";
 import "./components/styles/polls.css";
 import "./components/styles/responsive.css";
+import "./components/styles/dualscreen.css"
 
 function App() {
   return (
