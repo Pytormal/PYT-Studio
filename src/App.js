@@ -29,7 +29,7 @@ import "./components/styles/dualscreen.css"
 function App() {
   return (
     <>
-      <section id="split">\
+      <section id="split">
       <section className="left-links links">
         <Link to="/">Home</Link>
 
@@ -39,7 +39,8 @@ function App() {
           Log Out
         </Link>
 
-        <Link to="/register">Register Here</Link>
+        <Link to="/register">Register Here</Link>.
+        
       </section>
 
       <div className="App">
