@@ -30,9 +30,9 @@
     font-size: 4rem;
   }
 }
-@media (screen-spanning: single-fold-vertical),
+/* @media (screen-spanning: single-fold-vertical),
   (screen-spanning: single-fold-horizontal) {
   body {
     background-color: teal;
   }
-}
+} */
