@@ -5,7 +5,7 @@
     display: flex;
   }
 
-  .left-links {
+  .links {
     /* grow: no, shrink: no, basis: fold-left */
     flex: 0 0 env(fold-left);
 
@@ -17,6 +17,17 @@
     height: 5rem;
   }
 
+  
+
+  .all-links {
+    display: flex;
+    flex-direction: column;
+    display: block;
+  }
+
+.home-links {
+    display: none;
+  }
   .App {
     /* fill the rest of the space */
     flex: 1;
@@ -28,8 +39,8 @@
   .title {
     font-size: 4rem;
   }
-  .message-box{
-    display:none;
+  .message-box {
+    display: none;
   }
 }
 
@@ -53,6 +64,9 @@
     height: 100vh;
     overflow-y: scroll;
   }
+  .left-links2{
+    display: none;
+  }
   #timer {
     flex: 1;
     height: 38vh;
@@ -61,8 +75,8 @@
   .form-container {
     flex: 1;
   }
-  .message-box{
-    display:none;
+  .message-box {
+    display: none;
   }
   /* 
   .title {

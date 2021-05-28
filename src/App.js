@@ -9,9 +9,8 @@ import ListSongs from "./components/ListSongs";
 import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
-import PollHome from './components/PollHome'
-import {Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
-
+import PollHome from "./components/PollHome";
+import { Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
 
 // import Credit from "./components/Credit";
 
@@ -26,60 +25,62 @@ import "./components/styles/polls.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
 
-
 function App() {
   return (
     <>
       <section id="split">
-      <section className="left-links links">
-        <Link to="/">Home</Link>
+        <section className="all-links">
+          <section className="left-links links">
+            <Link to="/">Home</Link>
+            <Link to="/songs_list">List Songs</Link>
+            <Link to="/login" onClick={logout}>
+              Log Out
+            </Link>
+            <Link to="/register">Register Here</Link>.
+          </section>
+          <section className="left-links2 links">
+            <Link to="/login">Login</Link>
+            <Link to="/Polls-hub">Polls Hub</Link>
+            <Link to="/upload-song">Upload Songs here</Link>
+            <Link to="/timers">Timers</Link>
+          </section>
+        </section>
 
-        <Link to="/songs_list">List Songs</Link>
+        <div className="App">
+          <Switch className="pick">
+            <Route path="/songs_list/:music_id">
+              <Song props={ListSongs} />
+            </Route>
+            <Route exact path="/songs_list">
+              <ListSongs props={ListSongs} />
+            </Route>
+            <Route path="/Polls-hub">
+              <PollHome />
+            </Route>
+            <Route path="/timers">
+              <Min5Timer />
+              <Min10Timer />
+              <Min30Timer />
+            </Route>
 
-        <Link to="/login" onClick={logout}>
-          Log Out
-        </Link>
+            <PrivateRoute
+              exact
+              path="/upload-song"
+              component={UploadSongs}
+            ></PrivateRoute>
 
-        <Link to="/register">Register Here</Link>.
-        
+            <Route path="/register">
+              <RegisterForm />
+            </Route>
+            <Route path="/login">
+              <LoginForm />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </section>
-
-      <div className="App">
-        <Switch className="pick">
-          <Route path="/songs_list/:music_id">
-            <Song props={ListSongs} />
-          </Route>
-          <Route exact path="/songs_list">
-            <ListSongs props={ListSongs} />
-          </Route>
-          <Route path="/Polls-hub">
-            <PollHome />
-          </Route>
-          <Route path="/timers">
-            <Min5Timer/>
-            <Min10Timer />
-            <Min30Timer />
-          </Route>
-
-          <PrivateRoute
-            exact
-            path="/upload-song"
-            component={UploadSongs}
-          ></PrivateRoute>
-
-          <Route path="/register">
-            <RegisterForm />
-          </Route>
-          <Route path="/login">
-            <LoginForm />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-      </section>
-      
     </>
   );
 }
