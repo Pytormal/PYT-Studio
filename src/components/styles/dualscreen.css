@@ -1,53 +1,38 @@
-@media (screen-spanning: single-fold-vertical) {
-  .split {
+/* Verticle Dual Spanning */
+@media (screen-spanning: single-fold-vertical),
+  (screen-spanning: single-fold-horizontal) {
+  #split {
     height: 100vh;
     display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .App {
-    flex-basis: calc(env(fold-left) - 60px);
-    margin-inline-end: env(fold-width);
   }
 
   .left-links {
+    /* grow: no, shrink: no, basis: fold-left */
     flex: 0 0 env(fold-left);
-    /* margin-inline-start: env(fold-width); */
-    justify-content: space-between;
+
+    /* equals to margin-right when writing mode is left-to-right (english)  */
+    /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
+    /* this will prevent content from being rendered behind the device mask */
+    margin-inline-end: env(fold-width);
+    /* overflow: hidden; */
+    height:auto;
+  }
+
+  .App {
+    /* fill the rest of the space */
+    flex: 1;
+
+    margin: 0;
+    height: 100%;
     overflow-y: scroll;
   }
-
-  .App {
-    flex-basis: calc(100vw - (env(fold-left) + env(fold-width)));
-    margin: 0.5rem;
+  .title{
+    font-size: 4rem;
   }
 }
-
-@media (screen-spanning: single-fold-horizontal) {
-  .split {
-    height: 100vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .left-links {
-    height: 350px;
-    font-size: 1rem;
-  }
-  .left-links,
-  .App {
-    margin-inline-start: env(fold-height);
-    overflow-y: scroll;
-  }
-
-  .App {
-    width: 90%;
-  }
-}
-
 @media (screen-spanning: single-fold-vertical),
   (screen-spanning: single-fold-horizontal) {
   body {
-    background-color: green;
+    background-color: teal;
   }
 }

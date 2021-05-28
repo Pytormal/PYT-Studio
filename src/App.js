@@ -23,8 +23,9 @@ import "./components/styles/formStyle.css";
 // import "./components/styles/credit.css";
 import "./components/styles/song-list.css";
 import "./components/styles/polls.css";
+import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
-import "./components/styles/dualscreen.css"
+
 
 function App() {
   return (

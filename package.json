@@ -1,8 +1,34 @@
 {
-  "name": "credits-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "overlay-app",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
   "dependencies": {
+    "axios": "^0.21.1",
+    "browserslist": "^4.16.6",
+    "caniuse-lite": "^1.0.30001230",
+    "cors": "^2.8.5",
+    "cssnano-preset-default": "^4.0.8",
+    "cssnano": "^4.1.11",
+    "dns-packet": "^1.3.4",
+    "electron-to-chromium": "^1.3.739",
+    "fsevents": "^2.3.2",
+    "hosted-git-info": "^2.8.9",
+    "momentjs": "^2.0.0",
+    "moment": "^2.29.1",
+    "nanoid": "^3.1.23",
+    "postcss-initial": "^3.0.4",
+    "postcss-svgo": "^4.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "resolve-url-loader": "^3.1.3",
+    "source-map-js": "^0.6.2",
+    "web-vitals": "^1.1.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
@@ -16,7 +42,6 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0",
     "yup": "^0.32.9"
-     
   },
   "scripts": {
     "start": "react-scripts start",
@@ -29,6 +54,15 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pytormal/Credits-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pytormal/Credits-App/issues"
   },
   "browserslist": {
     "production": [
