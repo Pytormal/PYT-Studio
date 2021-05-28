@@ -28,6 +28,9 @@
   .title {
     font-size: 4rem;
   }
+  .message-box{
+    display:none;
+  }
 }
 
 /* Horizontal Dual Spanning */
@@ -57,6 +60,9 @@
   }
   .form-container {
     flex: 1;
+  }
+  .message-box{
+    display:none;
   }
   /* 
   .title {
