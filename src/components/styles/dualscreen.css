@@ -1,8 +1,7 @@
 /* Verticle Dual Spanning */
-@media (screen-spanning: single-fold-vertical),
-  (screen-spanning: single-fold-horizontal) {
+@media (screen-spanning: single-fold-vertical) {
   #split {
-    height: 100vh;
+    height: 95vh;
     display: flex;
   }
 
@@ -15,7 +14,7 @@
     /* this will prevent content from being rendered behind the device mask */
     margin-inline-end: env(fold-width);
     /* overflow: hidden; */
-    height:auto;
+    height: 5rem;
   }
 
   .App {
@@ -26,10 +25,45 @@
     height: 100%;
     overflow-y: scroll;
   }
-  .title{
+  .title {
     font-size: 4rem;
   }
 }
+
+/* Horizontal Dual Spanning */
+@media (screen-spanning: single-fold-horizontal) {
+  body {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* .left-links {
+    flex: 1 0 calc(env(fold-left));
+    margin-inline-end: env(env(fold-width));
+    height: 6rem;
+     overflow-y: hidden;
+  }
+ */
+  .App {
+    flex: 1;
+    margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  #timer {
+    flex: 1;
+    height: 38vh;
+    overflow-y: scroll;
+  }
+  .form-container {
+    flex: 1;
+  }
+  /* 
+  .title {
+    font-size: 4rem;
+  } */
+}
+
 /* @media (screen-spanning: single-fold-vertical),
   (screen-spanning: single-fold-horizontal) {
   body {
