@@ -32,11 +32,11 @@ function App() {
         <section className="all-links">
           <section className="left-links links">
             <Link to="/">Home</Link>
-            <Link to="/songs_list">List Songs</Link>
+           <Link to="/register">Register Here</Link>
             <Link to="/login" onClick={logout}>
               Log Out
-            </Link>
-            <Link to="/register">Register Here</Link>.
+            </Link> 
+            <Link to="/songs_list">List Songs</Link>
           </section>
           <section className="left-links2 links">
             <Link to="/login">Login</Link>
@@ -63,7 +63,7 @@ function App() {
               <Min10Timer />
               <Min30Timer />
             </Route>
-       
+
             <PrivateRoute
               exact
               path="/upload-song"

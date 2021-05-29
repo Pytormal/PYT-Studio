@@ -38,6 +38,12 @@
   word-wrap: break-word;
 }
 
+.list-header{
+  padding:2vh;
+  margin-bottom:2rem;
+  color:mediumseagreen
+}
+
 .song-name{
   margin-bottom:3rem;
 }

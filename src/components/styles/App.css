@@ -8,10 +8,10 @@ html {
   color: crimson;
   background: transparent;
   /* overflow: hidden; */
-
-}  
- ::-webkit-scrollbar{display:none}
-
+}
+::-webkit-scrollbar {
+  display: none;
+}
 
 .App {
   font-family: sans-serif;
@@ -24,27 +24,27 @@ body {
   width: 100%;
 }
 
-h4{
-  font-size:2.2rem;
+h4 {
+  font-size: 2.2rem;
 }
 
 .title {
   font-size: 5rem;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom:10vh;
+  margin-bottom: 10vh;
 }
 
 .all-links {
   display: flex;
   justify-content: center;
-   margin-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 a {
   color: rgb(209, 72, 202);
-  text-decoration: none;
+text-decoration: none;
   padding: 1.5rem;
   font-size: 2.2rem;
 }
@@ -53,8 +53,7 @@ a:hover {
   color: goldenrod;
 }
 
-
 p {
   display: block;
-   font-size: 2rem;
+  font-size: 2rem;
 }
