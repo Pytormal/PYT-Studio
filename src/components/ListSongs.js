@@ -57,13 +57,14 @@ class Credits extends React.Component {
   render() {
     return (
       <>
-        <Link to="/upload-song">Upload Songs here</Link>
+        <Link id="upload-song" to="/upload-song">Upload Songs here</Link>
         <div
           className="song-marquee-wrapper song-wrapper"
           id="song_credits_container"
         >
           <div className="song-credits fade">
-          
+            <p>A list of songs that is used in my stream:<div>check out NCS's site at for great music:<a href="https://ncs.io" className="ncs-link">https://ncs.io</a></div>
+          </p>
                 <h1 className="title">
                   <p>Music provided by NoCopyrightSounds</p>
                 </h1>

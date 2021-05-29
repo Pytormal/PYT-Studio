@@ -5,7 +5,7 @@
     display: flex;
   }
 
-  .links {
+  .all-links {
     /* grow: no, shrink: no, basis: fold-left */
     flex: 0 0 env(fold-left);
 
@@ -14,18 +14,27 @@
     /* this will prevent content from being rendered behind the device mask */
     margin-inline-end: env(fold-width);
     /* overflow: hidden; */
-    height: 5rem;
   }
-
-  
 
   .all-links {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+  .left-links2 {
     display: block;
   }
 
-.home-links {
+
+  .links > a {
+    font-size: 4rem;
+       display: flex;
+    flex-direction: column;
+  }
+
+  .home-links {
     display: none;
   }
   .App {
@@ -36,8 +45,15 @@
     height: 100%;
     overflow-y: scroll;
   }
-  .title {
-    font-size: 4rem;
+  .welcome-title {
+    display:flex;
+    flex-direction: column;
+
+    font-size: 3rem;
+  }
+
+  .song-wrapper {
+    padding: 5vh;
   }
   .message-box {
     display: none;
@@ -64,7 +80,7 @@
     height: 100vh;
     overflow-y: scroll;
   }
-  .left-links2{
+  .left-links2 {
     display: none;
   }
   #timer {
