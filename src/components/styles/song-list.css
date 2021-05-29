@@ -1,6 +1,7 @@
 .song-wrapper {
   display: flex;
   justify-content: center;
+  height:100vh;
 }
 
 .song-card {
