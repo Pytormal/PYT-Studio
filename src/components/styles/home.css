@@ -1,11 +1,6 @@
 .welcome-title{ height:50vh;}
 
-.title {
-  font-size: 5rem;
-   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 #WelcomeUser{
   font-size:5rem;

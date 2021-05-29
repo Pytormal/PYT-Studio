@@ -21,17 +21,13 @@ class PollHome extends React.Component {
                   Welcome
                   {/* {user.userName} */}
                 </h1>
-                <p className="home-p">
-                  to the Hub of all things Polls
-                  <span> what would you like to do?</span>
-                 
-                </p>
-                <Link to='/polls-hub/polls'>click to complete the poll</Link>
+
+                <Link to="/polls-hub/polls">click to start the poll</Link>
               </Route>
             </Switch>
           </section>
 
-          <div className="home-links links">
+          <div className="polls-links links">
             {/* <Link to="/Polls">Streaming Poll</Link> */}
           </div>
         </div>

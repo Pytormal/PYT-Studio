@@ -41,8 +41,8 @@ function App() {
           <section className="left-links2 links">
             <Link to="/login">Login</Link>
             <Link to="/Polls-hub">Polls</Link>
-            <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link>
+            <Link to="/upload-song">Upload Songs here</Link>
           </section>
         </section>
 
@@ -54,6 +54,7 @@ function App() {
             <Route exact path="/songs_list">
               <ListSongs props={ListSongs} />
             </Route>
+
             <Route path="/Polls-hub">
               <PollHome />
             </Route>
@@ -62,7 +63,7 @@ function App() {
               <Min10Timer />
               <Min30Timer />
             </Route>
-
+       
             <PrivateRoute
               exact
               path="/upload-song"

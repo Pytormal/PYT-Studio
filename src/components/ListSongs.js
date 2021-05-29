@@ -63,7 +63,7 @@ class Credits extends React.Component {
           id="song_credits_container"
         >
           <div className="song-credits fade">
-            <p>A list of songs that is used in my stream:<div>check out NCS's site at for great music:<a href="https://ncs.io" className="ncs-link">https://ncs.io</a></div>
+            <p>A list of songs that is used in my stream:<div>check out NCS's site at for great music:<a href="https://ncs.io" className="ncs-link" >https://ncs.io</a></div>
           </p>
                 <h1 className="title">
                   <p>Music provided by NoCopyrightSounds</p>
@@ -74,7 +74,7 @@ class Credits extends React.Component {
               {this.state.songs.map((song) => {
                 return (
                   <div className="song-card" key={song.music_id}>
-                    <h4>
+                    <h4 className='song-name'>
                       {/* <span>{song.music_id} </span> */}
                       {song.songName}
                     </h4>
