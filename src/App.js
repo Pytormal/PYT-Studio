@@ -40,7 +40,7 @@ function App() {
           </section>
           <section className="left-links2 links">
             <Link to="/login">Login</Link>
-            <Link to="/Polls-hub">Polls Hub</Link>
+            <Link to="/Polls-hub">Polls</Link>
             <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link>
           </section>
