@@ -14,7 +14,7 @@ class Home extends React.Component {
       <div className="title-wrapper" id="title_container">
         <div className="title-card">
           <section className="welcome-title">
-            <h1 className="title">Welcome</h1>{" "}
+            <h1 className="title">Welcome</h1>
             <span id="WelcomeUser">{`${this.state.user.user_name},`}</span>
             <p className="home-p">what would you like to do?</p>
           </section>
@@ -25,6 +25,15 @@ class Home extends React.Component {
             <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link>
           </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CqRKOY4Cgvw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     );
