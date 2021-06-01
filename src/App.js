@@ -10,6 +10,7 @@ import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from "./components/PollHome";
+import BroadcastPage from "./components/utils/broadcastPage";
 import { Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
 
 // import Credit from "./components/Credit";
@@ -24,6 +25,7 @@ import "./components/styles/song-list.css";
 import "./components/styles/polls.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
+import "./components/styles/broadcastPage.css"
 
 function App() {
   return (
@@ -43,6 +45,7 @@ function App() {
             <Link to="/Polls-hub">Polls</Link>
             <Link to="/timers">Timers</Link>
             <Link to="/upload-song">Upload Songs here</Link>
+            <Link to='broadcasts'>Watch Broadcasts</Link>
           </section>
         </section>
 
@@ -55,6 +58,9 @@ function App() {
               <ListSongs props={ListSongs} />
             </Route>
 
+            <Route path='/broadcasts'>
+              <BroadcastPage/>
+</Route>
             <Route path="/Polls-hub">
               <PollHome />
             </Route>

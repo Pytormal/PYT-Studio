@@ -24,16 +24,8 @@ class Home extends React.Component {
             <Link to="/Polls-hub">Polls</Link>
             <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link>
+            <Link to="broadcasts">Watch Broadcasts</Link>
           </div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/CqRKOY4Cgvw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
         </div>
       </div>
     );
