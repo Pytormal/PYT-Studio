@@ -23,9 +23,10 @@ import "./components/styles/formStyle.css";
 // import "./components/styles/credit.css";
 import "./components/styles/song-list.css";
 import "./components/styles/polls.css";
+import "./components/styles/broadcastPage.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
-import "./components/styles/broadcastPage.css"
+
 
 function App() {
   return (
@@ -34,10 +35,10 @@ function App() {
         <section className="all-links">
           <section className="left-links links">
             <Link to="/">Home</Link>
-           <Link to="/register">Register Here</Link>
+            <Link to="/register">Register Here</Link>
             <Link to="/login" onClick={logout}>
               Log Out
-            </Link> 
+            </Link>
             <Link to="/songs_list">List Songs</Link>
           </section>
           <section className="left-links2 links">
@@ -45,7 +46,7 @@ function App() {
             <Link to="/Polls-hub">Polls</Link>
             <Link to="/timers">Timers</Link>
             <Link to="/upload-song">Upload Songs here</Link>
-            <Link to='broadcasts'>Watch Broadcasts</Link>
+            <Link to="broadcasts">Watch Broadcasts</Link>
           </section>
         </section>
 
@@ -58,9 +59,9 @@ function App() {
               <ListSongs props={ListSongs} />
             </Route>
 
-            <Route path='/broadcasts'>
-              <BroadcastPage/>
-</Route>
+            <Route path="/broadcasts">
+              <BroadcastPage />
+            </Route>
             <Route path="/Polls-hub">
               <PollHome />
             </Route>

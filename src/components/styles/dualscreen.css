@@ -111,8 +111,12 @@
     /* fill the rest of the space */
     flex: 1;
     margin: 0;
-    height: 80vh;
+  
     overflow-y: scroll;
+  }
+
+  #streaming{
+  height: 60vh;
   }
 
   .welcome-title {
