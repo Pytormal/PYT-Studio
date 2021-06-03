@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import * as yup from "yup";
 
+import "../utils/messages";
+
 import { useRouteMatch, Switch, Route, NavLink } from "react-router-dom";
+
+// creates a new submission
 
 export default function PollsForm() {
   const { path, url } = useRouteMatch();

@@ -11,6 +11,7 @@ import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from "./components/PollHome";
 import BroadcastPage from "./components/utils/broadcastPage";
+import MessageForm from "./components/forms/MessageForm"
 import { Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
 
 // import Credit from "./components/Credit";
@@ -26,7 +27,6 @@ import "./components/styles/polls.css";
 import "./components/styles/broadcastPage.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
-
 
 function App() {
   return (
@@ -48,6 +48,8 @@ function App() {
             <Link to="/upload-song">Upload Songs here</Link>
             <Link to="broadcasts">Watch Broadcasts</Link>
           </section>
+          <section id="duo">  <MessageForm /></section>
+        
         </section>
 
         <div className="App">

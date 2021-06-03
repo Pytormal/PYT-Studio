@@ -2,6 +2,8 @@ import React from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 // import { Link, Route, Switch } from 'react-router-dom';
 
+
+// logs user in
 class LoginForm extends React.Component {
   state = {
     credentials: {

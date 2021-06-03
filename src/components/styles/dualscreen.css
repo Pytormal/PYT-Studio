@@ -12,7 +12,7 @@
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
     /* this will prevent content from being rendered behind the device mask */
     margin-inline-end: env(fold-width);
-    /* overflow: hidden; */
+    overflow-y: scroll;
   }
 
   .all-links {
@@ -60,6 +60,14 @@
     padding: 5vh;
   }
 
+  #single {
+    display: none;
+  }
+
+  #duo {
+    display: block;
+  }
+
   .message-box {
     display: none;
   }
@@ -81,7 +89,7 @@
  */
   .all-links {
     display: flex;
-
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     display: block;
@@ -92,6 +100,7 @@
 
   .links {
     display: flex;
+
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -111,12 +120,12 @@
     /* fill the rest of the space */
     flex: 1;
     margin: 0;
-  
+
     overflow-y: scroll;
   }
 
-  #streaming{
-  height: 60vh;
+  #streaming {
+    height: 60vh;
   }
 
   .welcome-title {
@@ -132,6 +141,14 @@
   #song-credits-container {
     height: 80vh;
     overflow-y: scroll;
+  }
+
+  #single {
+    display: none;
+  }
+
+  #duo {
+    display: block;
   }
 
   .message-box {

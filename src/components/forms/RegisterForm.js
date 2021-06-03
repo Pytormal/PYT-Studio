@@ -3,6 +3,8 @@ import * as yup from "yup";
 import axios from "axios";
 import { useRouteMatch, Switch, Route } from "react-router-dom";
 
+
+// creates new user
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
 const formSchema = yup.object().shape({
@@ -98,7 +100,7 @@ export default function RegisterForm() {
       <Switch>
         <Route path={`${path}/form-submited`}>
           <div className="SubmitedText">
-            <h4>Submited Form </h4>
+            <h4>Submited Form, you can now login in </h4>
           </div>
         </Route>
 
@@ -213,6 +215,7 @@ export default function RegisterForm() {
             type="submit"
             id="submit"
             name="submit"
+            alert={"phone number or username taken"}
             disabled={!buttonDisabled}
             to={`${url}/form-submited`}
           >
