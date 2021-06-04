@@ -43,7 +43,7 @@ function App() {
           </section>
           <section className="left-links2 links">
             <Link to="/login">Login</Link>
-            <Link to="/Polls-hub">Polls</Link>
+            <Link to="/polls-hub">Polls</Link>
             <Link to="/timers">Timers</Link>
             <Link to="/upload-song">Upload Songs here</Link>
             <Link to="broadcasts">Watch Broadcasts</Link>
@@ -64,7 +64,7 @@ function App() {
             <Route path="/broadcasts">
               <BroadcastPage />
             </Route>
-            <Route path="/Polls-hub">
+            <Route path="/polls-hub">
               <PollHome />
             </Route>
             <Route path="/timers">
