@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch, Link } from "react-router-dom";
 
 import PollsForm from "./Polls/PollsForm";
+import DemographicForm from "./Polls/Demographic"
 
 // let user_name= 'Alex Andrew'
 
@@ -16,6 +17,9 @@ class PollHome extends React.Component {
               <Route path="/polls-hub/polls">
                 <PollsForm />
               </Route>
+              <Route path="/polls-hub//demographic-survey">
+                <DemographicForm />
+              </Route>
               <Route path="/polls-hub">
                 <h1 className="title">
                   Welcome
@@ -23,6 +27,9 @@ class PollHome extends React.Component {
                 </h1>
 
                 <Link to="/polls-hub/polls">click to start the poll</Link>
+                <Link to="/polls-hub//demographic-survey">
+                  click to start the Demographic Survey
+                </Link>
               </Route>
             </Switch>
           </section>

@@ -48,7 +48,7 @@ function App() {
             <Link to="/upload-song">Upload Songs here</Link>
             <Link to="broadcasts">Watch Broadcasts</Link>
           </section>
-          <section id="duo">  <MessageForm /></section>
+          {/* <section id="duo">  <MessageForm /></section> */}
         
         </section>
 
