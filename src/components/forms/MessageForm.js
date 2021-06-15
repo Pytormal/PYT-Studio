@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Message from "../utils/messages";
+// import Message from "../utils/messages";
 
 // sends messages
 const MessageForm = (props) => {

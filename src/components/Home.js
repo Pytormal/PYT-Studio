@@ -22,7 +22,7 @@ class Home extends React.Component {
           <div className="home-links links">
             <Link to="/login">Login</Link>
             <Link to="/Polls-hub">Polls</Link>
-            <Link to="/upload-song">Upload Songs here</Link>
+            {/* <Link to="/upload-song">Upload Songs here</Link> */}
             <Link to="/timers">Timers</Link>
             <Link to="broadcasts">Watch Broadcasts</Link>
           </div>

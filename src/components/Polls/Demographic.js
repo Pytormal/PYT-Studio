@@ -33,7 +33,7 @@ function DemographicForm() {
         both: yup.string().required(),
       })
       .optional(),
-    threeChoices: yup
+    twoChoices: yup
       .object({
         Yes: yup.string().required(),
         No: yup.string().required(),

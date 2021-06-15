@@ -1,4 +1,4 @@
-import React , { useState } from "react";
+import React  from "react";
 import MessageForm from "../forms/MessageForm";
 
 class BroadcastPage extends React.Component {
@@ -8,13 +8,13 @@ class BroadcastPage extends React.Component {
   };
 
 
-  sendMessage = (formData) => {
-    const newMember = {
-      id: Date.now(),
-      user: this.user_name,
-      message: formData.message,
-    };
-  };
+  // sendMessage = (formData) => {
+  //   const newMessage = {
+  //     id: Date.now(),
+  //     user: this.user_name,
+  //     message: formData.message,
+  //   };
+  // };
 
 
   render() {
