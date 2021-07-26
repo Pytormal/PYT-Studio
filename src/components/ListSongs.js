@@ -37,7 +37,7 @@ class Credits extends React.Component {
   };
 
   componentDidMount() {
-    this.getData();               
+    this.getData();
   }
 
   getData = () => {
@@ -56,7 +56,6 @@ class Credits extends React.Component {
   render() {
     return (
       <>
-        
         <Link id="upload-song" to="/upload-song">
           Upload Songs here
         </Link>
@@ -87,8 +86,14 @@ class Credits extends React.Component {
                       {song.songName}
                     </h4>
                     {/* <p>{song.musicSource}</p> */}
-                    <p>{song.Download}</p>
-                    <p>{song.Watch}</p>
+                    <p>
+                      Download/Listen here:
+                      <a href={song.Download}>{song.Download}</a>
+                    </p>
+
+                    <p>
+                      Watch Here: <a href={song.Watch}>{song.Watch}</a>
+                    </p>
                   </div>
                 );
               })}
