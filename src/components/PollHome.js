@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch, Link } from "react-router-dom";
 
 import PollsForm from "./Polls/PollsForm";
-import DemographicForm from "./Polls/Demographic";
+// import DemographicForm from "./Polls/Demographic";
 
 import PageDev from "./utils/PageinDev.js";
 
