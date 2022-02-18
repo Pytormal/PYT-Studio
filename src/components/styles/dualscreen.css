@@ -42,7 +42,7 @@
 
   .App {
     /* fill the rest of the space */
-    flex: 1 0;
+    flex: 0 0;
     margin: 0;
     height: 100vh;
     overflow-y: scroll;
@@ -85,7 +85,7 @@
   }
   /* .left-links {
     flex: 0 0 env(viewport-segment-right 0 0);
-    margin-inline-end: env(env(fold-width));
+    margin-inline-end: calc(env(viewport-segment-left 0 0) - env(viewport-segment-right 1 0)) 
     height: 6rem;
      overflow-y: hidden;
   }
