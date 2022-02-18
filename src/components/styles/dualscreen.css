@@ -12,7 +12,7 @@
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
     /* this will prevent content from being rendered behind the device mask */
 
-    margin-inline-end: calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0)) ; 
+    margin-inline-end: calc(env(viewport-segment-left 1 0)) ; 
 /* hinge width */
 
     overflow-y: scroll;
