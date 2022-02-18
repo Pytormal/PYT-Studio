@@ -1,5 +1,5 @@
 /* Verticle Dual Spanning */
-@media (screen-spanning: single-fold-vertical) {
+@media horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
@@ -7,11 +7,14 @@
 
   .all-links {
     /* grow: no, shrink: no, basis: fold-left */
-    flex: 0 0 env(fold-left);
+    flex: 0 0 env(viewport-segment-right 0 0);
     /* equals to margin-right when writing mode is left-to-right (english)  */
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
     /* this will prevent content from being rendered behind the device mask */
-    margin-inline-end: env(fold-width);
+
+    margin-inline-end: calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0)) ; 
+/* hinge width */
+
     overflow-y: scroll;
   }
 
