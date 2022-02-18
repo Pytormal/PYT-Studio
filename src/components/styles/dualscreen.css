@@ -1,5 +1,5 @@
 /* Verticle Dual Spanning */
-@media (vertical-viewport-segments: 2) {
+@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2)  {
   #split {
     height: 100vh;
     display: flex;
@@ -77,7 +77,7 @@
 }
 
 /* Horizontal Dual Spanning */
-@media (screen-spanning: single-fold-horizontal) {
+@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
@@ -164,8 +164,7 @@
   } */
 }
 
-/* @media (screen-spanning: single-fold-vertical),
-  (screen-spanning: single-fold-horizontal) {
+/*@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
   body {
     background-color: teal;
   }
