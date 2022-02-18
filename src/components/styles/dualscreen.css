@@ -1,5 +1,5 @@
 /* Verticle Dual Spanning */
-@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2)  {
+@media  (screen-spanning: single-fold-vertical) {
   #split {
     height: 100vh;
     display: flex;
@@ -12,7 +12,7 @@
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
     /* this will prevent content from being rendered behind the device mask */
 
-    margin-inline-end: calc(env(viewport-segment-left 0 0)) ; 
+  margin-inline-end: calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0))   ; 
 /* hinge width */
 
     overflow-y: scroll;
@@ -42,7 +42,7 @@
 
   .App {
     /* fill the rest of the space */
-    flex: 1;
+    flex: 1 0;
     margin: 0;
     height: 100vh;
     overflow-y: scroll;
@@ -77,7 +77,7 @@
 }
 
 /* Horizontal Dual Spanning */
-@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
+@media (screen-spanning: single-fold-horizontal) {
   #split {
     height: 100vh;
     display: flex;
