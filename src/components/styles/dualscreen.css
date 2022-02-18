@@ -1,5 +1,5 @@
 /* Verticle Dual Spanning */
-@media horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
+@media (vertical-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
