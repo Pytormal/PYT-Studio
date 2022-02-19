@@ -1,15 +1,9 @@
-.welcome-title{ height:10vh;}
-
-
-
-#WelcomeUser{
-  font-size:5rem;
-padding:4rem;
- display: flex;
+#WelcomeUser {
+  font-size: 5rem;
+  padding: 4rem;
+  display: flex;
   justify-content: center;
   align-items: center;
- 
-
 }
 
 .home-p {
@@ -19,7 +13,6 @@ padding:4rem;
   margin-bottom: 2rem;
 }
 
-.left-links2{
-display: none;
+.left-links2 {
+  display: none;
 }
-
