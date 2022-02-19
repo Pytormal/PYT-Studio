@@ -63,6 +63,7 @@
     align-items: flex-end;
     overflow-y: visible;
     justify-content: space-evenly;
+    margin-bottom:3rem;
   }
 
   .App {
