@@ -1,5 +1,5 @@
 /* Verticle Dual Spanning */
-@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
+@media (vertical-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
@@ -13,7 +13,7 @@
     /* this will prevent content from being rendered behind the device mask */
 
     margin-inline-end: calc(
-      env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0)
+    calc(env(viewport-segment-top 0 1) - env(viewport-segment-bottom 0 0))
     );
     /* hinge width */
 
@@ -79,7 +79,7 @@
 }
 
 /* Horizontal Dual Spanning */
-@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
+@media (horizontal-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
@@ -167,8 +167,17 @@
   } */
 }
 
-/*@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
-  body {
-    background-color: teal;
-  }
-} */
+/* maximum width of our customers phones is 420px */
+/* spanning: none is optional in this case */
+@media (max-width: 420px) {
+   body {
+      background-color: yellow;
+   }
+}
+
+/* Separating media features with comma `,` is equivalent to the logical operation OR  */
+@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
+   body {
+      background-color: green;
+   }
+}
