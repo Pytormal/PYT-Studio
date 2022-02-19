@@ -1,5 +1,5 @@
 import React  from "react";
-import MessageForm from "../forms/MessageForm";
+// import MessageForm from "../forms/MessageForm";
 
 class BroadcastPage extends React.Component {
   state = {
