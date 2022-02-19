@@ -1,3 +1,4 @@
+/* double-portrait, wide */
 @media (horizontal-viewport-segments: 2) {
   #split {
     height: 100vh;
@@ -34,10 +35,58 @@
     display: none;
   }
 
-   .links > a {
+  .links > a {
     font-size: 4rem;
     display: flex;
     flex-direction: column;
+  }
+
+  .left-links2 {
+    display: block;
+  }
+}
+
+/*  */
+
+/* double-landascape, tall */
+@media (vertical-viewport-segments: 2) {
+  #split {
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .all-links {
+    /* fill the rest of the space */
+    flex: 1;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden
+  }
+
+  .App {
+    /* grow: no, shrink: no, basis: fold-left */
+    flex: 0 0 env(viewport-segment-top 0 1);
+
+    /* equals to margin-right when writing mode is left-to-right (english)  */
+    /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
+    /* this will prevent content from being rendered behind the device mask */
+    margin-inline-end: calc(
+      env(viewport-segment-top 0 1) - env(viewport-segment-bottom 0 0)
+    ); /* hinge width */
+
+    overflow: visible;
+      height: 100vh;
+  }
+
+  .home-links {
+    display: none;
+  }
+
+  .links > a {
+    font-size: 4rem;
+    flex-direction: row;
   }
 
   .left-links2 {

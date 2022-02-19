@@ -78,6 +78,7 @@
   #split {
     height: 100vh;
     display: flex;
+    flex-direction: column;
   }
   .left-links {
   flex: 0 0 env(viewport-segment-right 0 0);
