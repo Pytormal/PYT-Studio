@@ -1,5 +1,5 @@
 /* Verticle Dual Spanning */
-@media  (screen-spanning: single-fold-vertical) {
+@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
@@ -12,8 +12,10 @@
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
     /* this will prevent content from being rendered behind the device mask */
 
-  margin-inline-end: calc(env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0))   ; 
-/* hinge width */
+    margin-inline-end: calc(
+      env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0)
+    );
+    /* hinge width */
 
     overflow-y: scroll;
   }
@@ -77,19 +79,21 @@
 }
 
 /* Horizontal Dual Spanning */
-@media (screen-spanning: single-fold-horizontal) {
+@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
     flex-direction: column-reverse;
   }
-  /* .left-links {
-    flex: 0 0 env(viewport-segment-right 0 0);
-    margin-inline-end: calc(env(viewport-segment-left 0 0) - env(viewport-segment-right 1 0)) 
+  .left-links {
+  flex: 0 0 env(viewport-segment-right 0 0);
+    margin-inline-end: calc(
+      env(viewport-segment-left 0 0) - env(viewport-segment-right 1 0)
+    );
     height: 6rem;
-     overflow-y: hidden;
+    overflow-y: hidden;
   }
- */
+
   .all-links {
     display: flex;
     flex-direction: column-reverse;
