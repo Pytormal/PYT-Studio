@@ -1,5 +1,4 @@
-/* Verticle Dual Spanning */
-@media (vertical-viewport-segments: 2) {
+@media (horizontal-viewport-segments: 2) {
   #split {
     height: 100vh;
     display: flex;
@@ -8,176 +7,40 @@
   .all-links {
     /* grow: no, shrink: no, basis: fold-left */
     flex: 0 0 env(viewport-segment-right 0 0);
+
     /* equals to margin-right when writing mode is left-to-right (english)  */
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
     /* this will prevent content from being rendered behind the device mask */
-
     margin-inline-end: calc(
-    calc(env(viewport-segment-top 0 1) - env(viewport-segment-bottom 0 0))
-    );
-    /* hinge width */
+      env(viewport-segment-left 1 0) - env(viewport-segment-right 0 0)
+    ); /* hinge width */
 
     overflow-y: scroll;
-  }
-
-  .all-links {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     display: block;
-  }
-
-  .left-links2 {
-    display: block;
-  }
-
-  .links > a {
-    font-size: 4rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home-links {
-    display: none;
-  }
-
-  .App {
-    /* fill the rest of the space */
-    flex: 0 0;
-    margin: 0;
-    height: 100vh;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: block;
-  }
-
-  .welcome-title {
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-  }
-
-  .song-wrapper {
-    padding: 5vh;
-  }
-
-  #single {
-    display: none;
-  }
-
-  #duo {
-    display: block;
-  }
-
-  .message-box {
-    display: none;
-  }
-}
-
-/* Horizontal Dual Spanning */
-@media (horizontal-viewport-segments: 2) {
-  #split {
-    height: 100vh;
-    display: flex;
-  }
-  .left-links {
-  flex: 0 0 env(viewport-segment-right 0 0);
-    margin-inline-end: calc(
-      env(viewport-segment-left 0 0) - env(viewport-segment-right 1 0)
-    );
-    height: 6rem;
-    overflow-y: hidden;
-  }
-
-  .all-links {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    display: block;
-  }
-  .left-links2 {
-    display: block;
-  }
-
-  .links {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    flex-direction: row;
-  }
-
-  .links > a {
-    margin: 1rem;
-    font-size: 2rem;
-  }
-
-  .home-links {
-    display: none;
   }
 
   .App {
     /* fill the rest of the space */
     flex: 1;
+    width: 100vh;
     margin: 0;
-
-    overflow-y: scroll;
+    overflow: scroll;
   }
 
-  #streaming {
-    height: 60vh;
+  .home-links {
+    display: none;
   }
 
-  .welcome-title {
+   .links > a {
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
   }
 
-  .song-wrapper {
-    padding: 5vh;
-  }
-
-  #song-credits-container {
-    height: 80vh;
-    overflow-y: scroll;
-  }
-
-  #single {
-    display: none;
-  }
-
-  #duo {
+  .left-links2 {
     display: block;
   }
-
-  .message-box {
-    display: none;
-  }
-
-  /* 
-  .title {
-    font-size: 4rem;
-  } */
-}
-
-/* maximum width of our customers phones is 420px */
-/* spanning: none is optional in this case */
-@media (max-width: 420px) {
-   body {
-      background-color: yellow;
-   }
-}
-
-/* Separating media features with comma `,` is equivalent to the logical operation OR  */
-@media (horizontal-viewport-segments: 2), (vertical-viewport-segments: 2) {
-   body {
-      background-color: green;
-   }
 }

@@ -51,7 +51,6 @@ function App() {
             <Link to="broadcasts">Watch Broadcasts</Link>
           </section>
           {/* <section id="duo">  <MessageForm /></section> */}
-        
         </section>
 
         <div className="App">

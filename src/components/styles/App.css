@@ -1,5 +1,4 @@
 html {
-  display: flex;
   background-color: transparent;
   align-items: center;
   justify-content: center;
@@ -20,7 +19,6 @@ html {
 }
 text-decoration:underline
 body {
-  margin: 2.2rem 0 0 0;
   width: 100%;
 }
 
@@ -39,7 +37,6 @@ h4 {
 .all-links {
   display: flex;
   justify-content: center;
-  margin-bottom: 8rem;
 }
 
 a {
