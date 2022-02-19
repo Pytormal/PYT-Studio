@@ -31,9 +31,9 @@ class BroadcastPage extends React.Component {
                 allowfullscreen
               ></iframe>
             </section>
-            <section id="single">
+            {/* <section id="single">
               <MessageForm />
-            </section>
+            </section> */}
           </section>
         </section>
       </>
