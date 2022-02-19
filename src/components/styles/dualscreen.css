@@ -60,7 +60,7 @@
     /* fill the rest of the space */
 
     flex: 1;
-    align-items: flex-end;
+    align-items: center;
     overflow-y: visible;
     justify-content: space-evenly;
     margin-bottom:3rem;
@@ -78,6 +78,10 @@
     ); /* hinge width */
 
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
   }
 
   .home-links {

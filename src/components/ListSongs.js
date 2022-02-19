@@ -56,9 +56,9 @@ class Credits extends React.Component {
   render() {
     return (
       <>
-        <Link id="upload-song" to="/upload-song">
+        {/* <Link id="upload-song" to="/upload-song">
           Upload Songs here
-        </Link>
+        </Link> */}
         <div
           className="song-marquee-wrapper song-wrapper"
           id="song-credits-container"

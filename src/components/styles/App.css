@@ -31,7 +31,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
+  margin-top: 10vh;
 }
 
 .all-links {
