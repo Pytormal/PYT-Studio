@@ -41,6 +41,7 @@ h4 {
 .all-links {
   display: flex;
   justify-content: center;
+  padding-top:5rem;
 }
 
 .home-links{
