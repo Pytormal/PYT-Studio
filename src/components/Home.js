@@ -5,7 +5,7 @@ import "./styles/timer.css";
 
 class Home extends React.Component {
   state = {
-    user: { user_name: "Alex Andrew" },
+    user: { user_name: "[User Name Here]" },
   };
 
   render() {
