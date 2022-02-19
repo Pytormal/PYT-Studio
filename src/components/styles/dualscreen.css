@@ -58,16 +58,16 @@
 
   .all-links {
     /* fill the rest of the space */
+
     flex: 1;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    overflow:hidden
+    align-items: flex-end;
+    overflow-y: visible;
+    justify-content: space-evenly;
   }
 
   .App {
     /* grow: no, shrink: no, basis: fold-left */
-    flex: 0 0 env(viewport-segment-top 0 1);
+    flex: 0 0 env(viewport-segment-bottom 0 0);
 
     /* equals to margin-right when writing mode is left-to-right (english)  */
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
@@ -76,8 +76,7 @@
       env(viewport-segment-top 0 1) - env(viewport-segment-bottom 0 0)
     ); /* hinge width */
 
-    overflow: visible;
-      height: 100vh;
+    overflow-y: scroll;
   }
 
   .home-links {
@@ -85,8 +84,9 @@
   }
 
   .links > a {
-    font-size: 4rem;
-    flex-direction: row;
+    font-size: 3rem;
+    padding: 2rem;
+    display: flex;
   }
 
   .left-links2 {
