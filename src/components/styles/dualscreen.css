@@ -3,6 +3,7 @@
   #split {
     height: 100vh;
     display: flex;
+Flex-direction: row;
   }
 
   .all-links {
@@ -54,7 +55,7 @@ Margin-top:5rem;
   #split {
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .all-links {
