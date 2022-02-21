@@ -81,6 +81,7 @@ Flex-direction: row;
     overflow-y: scroll;
     display: flex;
     align-items: center;
+Margin:0;
   }
 
   .home-links {
@@ -97,6 +98,9 @@ Flex-direction: row;
     display: block;
   }
 
-
+#streaming{
+Height:80vh;
+Width:90%
+} 
 
 }
