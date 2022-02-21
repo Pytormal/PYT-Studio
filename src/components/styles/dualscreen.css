@@ -68,7 +68,7 @@
 
   .App {
     /* grow: no, shrink: no, basis: fold-left */
-    flex: 0 0 env(viewport-segment-bottom 0 0);
+    flex: 0 0 env(viewport-segment-top 0 1);
 
     /* equals to margin-right when writing mode is left-to-right (english)  */
     /* equals to margin-left when writing mode is right-to-left (arabic, hebrew)  */
