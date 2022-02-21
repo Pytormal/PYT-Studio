@@ -2,7 +2,7 @@
   "short_name": "Web Overlay",
   "name": "Pytormal web Overlay app",
   "icons": [
-    {
+    { 
       "src": "/android-icon-36x36.png",
       "sizes": "36x36",
       "type": "image/png",
