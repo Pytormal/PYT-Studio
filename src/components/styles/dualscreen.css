@@ -29,6 +29,7 @@ Flex-direction: row;
     flex: 1;
     width: 100vh;
     margin: 0;
+Margin-top:5rem;
     overflow: scroll;
   }
 
@@ -81,6 +82,7 @@ Flex-direction: row;
     overflow-y: scroll;
     display: flex;
     align-items: center;
+Margin:0;
   }
 
   .home-links {
