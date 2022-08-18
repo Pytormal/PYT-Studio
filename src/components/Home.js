@@ -9,7 +9,7 @@ class Home extends React.Component {
   };
 
   render() {
-  {/* let user = JSON.parse(sessionStorage.getItem('userName')) */} 
+  // let user = JSON.parse(sessionStorage.getItem('userName')) //
     return (
       <div className="title-wrapper" id="title_container">
         <div className="title-card">
