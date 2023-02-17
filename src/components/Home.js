@@ -14,10 +14,10 @@ class Home extends React.Component {
       <div className="title-wrapper" id="title_container">
         <div className="title-card">
           <section className="welcome-title">
-            <h1 className="title">Welcome</h1>
+            <h1> Welcome to Pytormal's Studeio</h1>
        {/*  //  <span id="WelcomeUser">{`${this.state.user.user_name},`}</span>
          //   <p className="home-p">what would you like to do?</p> */} 
-<p> this site is in progress and changes will be made to adapt the needs of the design </p>
+<H2> a place for a collection of Alex Andrew's work<\h2>
           </section>
 
           <div className="home-links links">
