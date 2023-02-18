@@ -49,7 +49,7 @@ function App() {
             <Link to="/polls-hub">Polls</Link>
             <Link to="/timers">Timers</Link>
             <Link to="/upload-song">Upload Songs here</Link>
-            <Link to="video-gallery">Videos</Link>
+            <Link to="/video-gallery">Videos</Link>
           </section>
           {/* <section id="duo">  <MessageForm /></section> */}
         </section>
