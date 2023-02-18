@@ -1,7 +1,7 @@
 import React  from "react";
 // import MessageForm from "../forms/MessageForm";
 
-class Video-gallery extends React.Component {
+class Videogallery extends React.Component {
   state = {
     user: { user_name: "Alex Andrew" },
     message: '',
@@ -41,4 +41,4 @@ class Video-gallery extends React.Component {
   }
 }
 
-export default Video-gallery;
+export default Videogallery;
