@@ -25,7 +25,7 @@ class Home extends React.Component {
         {/* <Link to="/Polls-hub">Polls</Link>
              <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link> */} 
-            <Link to="/video-gallery"> Videos</Link>
+            <Link to="/video-gallery">Videos</Link>
           </div>
         </div>
       </div>
