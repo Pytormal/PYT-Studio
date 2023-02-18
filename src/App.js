@@ -63,7 +63,7 @@ function App() {
               <ListSongs props={ListSongs} />
             </Route>
 
-            <Route path="/video-galleey">
+            <Route path="/video-gallery">
               <Videogallery />
             </Route>
             <Route path="/polls-hub">
