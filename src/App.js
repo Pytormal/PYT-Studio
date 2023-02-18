@@ -11,7 +11,7 @@ import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from "./components/PollHome";
-import Video-gallery from "./components/utils/Video-gallery";
+import Videogallery from "./components/utils/Video-gallery";
 // import MessageForm from "./components/forms/MessageForm"
 import { Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
 
@@ -64,7 +64,7 @@ function App() {
             </Route>
 
             <Route path="/video-galleey">
-              <Video-gallery />
+              <Videogallery />
             </Route>
             <Route path="/polls-hub">
               <PollHome />
