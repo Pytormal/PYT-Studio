@@ -9,17 +9,18 @@
 }
 
 iframe {
-  height: auto;
-  margin: 2.2rem 0 0 0;
-  padding: 1rem;
+  height: 36%;
+  width: 66%;
+  margin: 1rem 2em 5em 2em;
+  padding: 2rem;
 
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 6px 3px rgba(173, 220, 119, 0.12),
+    0 10px 8px rgba(89, 6, 6, 0.24);
   border-radius: 6px;
 }
 
 .stream-video {
   height: 80vh;
-  width:60vw;
 }
 
 #duo {
