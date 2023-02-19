@@ -11,7 +11,7 @@ import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from "./components/PollHome";
-import Videogallery from "./components/utils/Video-gallery";
+import Videogallery from "./components/Video-gallery";
 // import MessageForm from "./components/forms/MessageForm"
 import { Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
 
@@ -27,7 +27,7 @@ import "./components/styles/formStyle.css";
 // import "./components/styles/credit.css";
 import "./components/styles/song-list.css";
 import "./components/styles/polls.css";
-import "./components/styles/broadcastPage.css";
+import "./components/styles/video-gallery.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
 
