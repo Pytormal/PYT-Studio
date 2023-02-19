@@ -11,10 +11,10 @@ html {
   display: none;
 }
 
-#split{
-  display:flex;
+#split {
+  display: flex;
   flex-direction: column;
-  height:100vh;
+  height: 100vh;
 }
 
 .App {
@@ -27,11 +27,13 @@ text-decoration:underline body {
 }
 
 h1 {
-   font-size: 5rem;
+  padding: 1em;
+  font-size: 4.6rem;
 }
 
 h2 {
-   font-size: 3rem;
+  padding: 6em 0 0 0;
+  font-size: 3rem;
 }
 
 h4 {
@@ -49,12 +51,12 @@ h4 {
 .all-links {
   display: flex;
   justify-content: center;
-  padding-top:5rem;
-  padding-bottom:4.5rem;
+  padding-top: 5rem;
+  padding-bottom: 4.5rem;
 }
 
-.home-links{
-  display:flex;
+.home-links {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
 }
