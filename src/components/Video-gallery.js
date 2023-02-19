@@ -21,27 +21,34 @@ class Videogallery extends React.Component {
         <section id="streaming">
           <section id="split-stream-comments">
             <section className="stream-video">
+              
               <iframe
-                src="https://www.youtube.com/embed/CqRKOY4Cgvw"
-                title="YouTube video player"
+                width="756"
+                height="425"
+                src="https://www.youtube.com/embed/p4m1apSSZVM"
+                title="Pallet Sort Machine in action"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
 
               <iframe
-                src="https://www.youtube.com/embed/CqRKOY4Cgvw"
-                title="YouTube video player"
+                width="756"
+                height="425"
+                src="https://www.youtube.com/embed/-j5ABgDKZnE"
+                title="Swimming with the Jellyfish"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
 
               <iframe
-                src="https://www.youtube.com/embed/CqRKOY4Cgvw"
-                title="YouTube video player"
+                width="756"
+                height="425"
+                src="https://www.youtube.com/embed/bHpXAA9tHUQ"
+                title="Pallet Sort Machine Demostration"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
             </section>
