@@ -9,8 +9,8 @@ html {
 }
 
 #placeholder {
- margin: 1rem 2em 5em 2em;
-  padding: 2rem;
+  margin: 6rem 2em 5em 2em;
+  padding: 2rem ;
 
   box-shadow: 2rem 5rem 8rem 9rem rgba(115, 207, 11, 0.12),
     2rem 5rem 8rem 2rem rgba(190, 21, 21, 0.24);
@@ -18,9 +18,15 @@ html {
   color: green;
 }
 
-#parkey{
+h5 {
+  color: brown;
+  font-size: 3rem;
+  padding:.5em;
+}
+
+#parkey {
   padding: 2rem;
-  color:rgb(68, 68, 200)
+  color: rgb(68, 68, 200);
 }
 
 ::-webkit-scrollbar {

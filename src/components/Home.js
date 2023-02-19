@@ -19,14 +19,18 @@ class Home extends React.Component {
           <p className="home-p">what would you like to do?</p> */}
             <h2> a collection of Alex Andrew's art</h2>
 
-            <p Id="placeholder">
+            <section Id="placeholder">
+              <h5> a little background:</h5>
+                <p >
               Web Page will change due to many variables, some links may not
               work or pages have no relevant data or forms that relate to cinema
               or photograpghy. Layout and Responsive designs will change overtime.
               <p id="parkey">
-                this was a former webapp that was created for overlays for live streaming and recording.
+                this was a former webapp that was created for overlays for live streaming and recording. with Pytormal domain bought already, it still is a good name, so. the Domain will now be used for: <p>Cinematography and Photography business for Alex Andrew and name of Business is Pytormal's Studio</p>
               </p>
             </p>
+            </section>
+          
           </section>
 
           <div className="home-links links">
