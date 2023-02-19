@@ -1,6 +1,5 @@
 #streaming {
   height: 100vh;
-  flex-direction: column;
 }
 
 #split-stream-comments {
@@ -16,7 +15,6 @@ iframe {
 
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border-radius: 6px;
-  width: 20vw;
 }
 
 .stream-video {

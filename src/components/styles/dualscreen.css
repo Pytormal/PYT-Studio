@@ -100,8 +100,9 @@
   }
 
   #streaming {
+    flex-direction: column;
     height: 80vh;
-    width: 90%;
+    width: 50vw;
   }
   iframe {
     height: auto;
