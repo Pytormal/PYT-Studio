@@ -38,17 +38,17 @@ function App() {
         <section className="all-links">
           <section className="left-links links">
             <Link to="/">Home</Link>
-            <Link to="/register">Register Here</Link>
+            <Link to="/register">Register Here</Link> {/* does not work*/}
             <Link to="/login" onClick={logout}>
               Log Out
             </Link>
-            <Link to="/songs_list">List Songs</Link>
+            <Link to="/songs_list">Songs</Link> {/* songs used in videos*/}
           </section>
           <section className="left-links2 links">
-            <Link to="/login">Login</Link>
-            <Link to="/polls-hub">Polls</Link>
-            <Link to="/timers">Timers</Link>
-            <Link to="/upload-song">Upload Songs here</Link>
+            <Link to="/login">Login</Link> {/* does not work*/}
+            <Link to="/polls-hub">Polls</Link> {/*used for getting client info*/}
+            {/* <Link to="/timers">Timers</Link>  */}
+            {/* <Link to="/upload-song">Upload Songs here</Link> */}
             <Link to="/video-gallery">Videos</Link>
           </section>
           {/* <section id="duo">  <MessageForm /></section> */}
