@@ -3,10 +3,21 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 10px;
-  color: crimson;
+  color: rgb(203, 51, 142);
   background: transparent;
   /* overflow: hidden; */
 }
+
+#placeholder {
+padding: 30% 4rem 2em 4rem;
+  color: green;
+}
+
+#parkey{
+  padding: 2rem;
+  color:rgb(68, 68, 200)
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -61,7 +72,7 @@ h4 {
   align-items: flex-end;
 }
 a {
-  color: rgb(209, 72, 202);
+  color: rgb(66, 155, 210);
   text-decoration: none;
   padding: 1.5rem;
   font-size: 2.2rem;
