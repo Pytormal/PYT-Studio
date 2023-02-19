@@ -19,6 +19,7 @@ iframe {
 
 .stream-video {
   height: 80vh;
+  width: 80vw;
 }
 
 #duo {
