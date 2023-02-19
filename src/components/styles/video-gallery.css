@@ -1,5 +1,6 @@
 #streaming {
   height: 100vh;
+  flex-direction: column;
 }
 
 #split-stream-comments {
