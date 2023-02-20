@@ -16,3 +16,21 @@
 .left-links2 {
   display: none;
 }
+
+#social {
+  margin: 6rem 2em 5em 2em;
+  padding: 2rem;
+
+  box-shadow: 0m 5rem 8rem 0 rgba(197, 236, 226, 0.145),
+    0 5rem 8rem 0 rgba(211, 186, 186, 0.24);
+  border-radius: 6px;
+  color: rgba(74, 58, 153, 0.859);
+}
+h6 {
+  font-size: 2rem;
+}
+.fa-do {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

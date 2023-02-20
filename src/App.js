@@ -46,11 +46,14 @@ function App() {
           </section>
           <section className="left-links2 links">
             <Link to="/login">Login</Link> {/* does not work*/}
-            <Link to="/polls-hub">Polls</Link> {/*used for getting client info*/}
+            <Link to="/polls-hub">Polls</Link>{" "}
+            {/*used for getting client info*/}
             {/* <Link to="/timers">Timers</Link>  */}
             {/* <Link to="/upload-song">Upload Songs here</Link> */}
             <Link to="/video-gallery">Videos</Link>
+            
           </section>
+    
           {/* <section id="duo">  <MessageForm /></section> */}
         </section>
 
@@ -93,6 +96,11 @@ function App() {
           </Switch>
         </div>
       </section>
+      <footer>
+        <ul>
+          <nav></nav>
+        </ul>
+      </footer>
     </>
   );
 }

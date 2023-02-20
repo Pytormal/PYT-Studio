@@ -9,7 +9,7 @@ class Home extends React.Component {
   };
 
   render() {
-  // let user = JSON.parse(sessionStorage.getItem('userName')) //
+    // let user = JSON.parse(sessionStorage.getItem('userName')) //
     return (
       <div className="title-wrapper" id="title_container">
         <div className="title-card">
@@ -21,16 +21,23 @@ class Home extends React.Component {
 
             <section Id="placeholder">
               <h5> a little background:</h5>
-                <p >
-              Web Page will change due to many variables, some links may not
-              work or pages have no relevant data or forms that relate to cinema
-              or photograpghy. Layout and Responsive designs will change overtime.
-              <p id="parkey">
-                this was a former webapp that was created for overlays for live streaming and recording. with Pytormal domain bought already, it still is a good name, so. the Domain will now be used for: <p>Cinematography and Photography business for Alex Andrew and name of Business is Pytormal's Studio</p>
+              <p>
+                Web Page will change due to many variables, some links may not
+                work or pages have no relevant data or forms that relate to
+                cinema or photograpghy. Layout and Responsive designs will
+                change overtime.
+                <p Id="parkey">
+                  this was a former webapp that was created for overlays for
+                  live streaming and recording. with Pytormal domain bought
+                  already, it still is a good name, so. the Domain will now be
+                  used for:{" "}
+                  <p>
+                    Cinematography and Photography business for Alex Andrew and
+                    name of Business is Pytormal's Studio
+                  </p>
+                </p>
               </p>
-            </p>
             </section>
-          
           </section>
 
           <div className="home-links links">
@@ -40,6 +47,42 @@ class Home extends React.Component {
             <Link to="/timers">Timers</Link> */}
             <Link to="/video-gallery">Videos</Link>
           </div>
+          <nav Id="social">
+            <h6>Lets Meet</h6>
+            <section class="fa-do">
+              <a
+                class="fa fa-linkedin"
+                href="https://www.linkedin.com/in/mallory-alexandrew/"
+                target="_blank"
+              >
+                linkedin
+              </a>
+
+              <a
+                class="fa fa-facebook"
+                href="https://www.facebook.com/pytormal"
+                target="_blank"
+              >
+                facebook
+              </a>
+
+              <a
+                class="fa fa-twitter"
+                href="https://www.twitter.com/pytormal"
+                target="_blank"
+              >
+                twitter
+              </a>
+
+              <a
+                class="fa fa-instagram"
+                href="https://www.instagram.com/alexandrewmallory/"
+                target="_blank"
+              >
+                instagram
+              </a>
+            </section>
+          </nav>
         </div>
       </div>
     );

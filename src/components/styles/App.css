@@ -10,7 +10,7 @@ html {
 
 #placeholder {
   margin: 6rem 2em 5em 2em;
-  padding: 2rem ;
+  padding: 2rem;
 
   box-shadow: 2rem 5rem 8rem 9rem rgba(115, 207, 11, 0.12),
     2rem 5rem 8rem 2rem rgba(190, 21, 21, 0.24);
@@ -21,7 +21,7 @@ html {
 h5 {
   color: brown;
   font-size: 3rem;
-  padding:.5em;
+  padding: 0.5em;
 }
 
 #parkey {
