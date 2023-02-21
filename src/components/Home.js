@@ -67,7 +67,7 @@ class Home extends React.Component {
                 class="ri-facebook-line"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https:/www.facebook.com/pytormalstudios"
+                href="https://www.facebook.com/pytormalstudios/"
               >
                 <img
                   rel="noopener noreferrer"
@@ -78,7 +78,7 @@ class Home extends React.Component {
 
               <a
                 class="ri-twitter-line"
-                href="https://www.twitter.com/pytormal"
+                href="https://www.twitter.com/pytormal/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
