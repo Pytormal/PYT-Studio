@@ -76,21 +76,31 @@ class Home extends React.Component {
                 />
               </a>
 
-              {/* <a
-                class="fa fa-twitter"
+              <a
+                class="ri-twitter-line"
                 href="https://www.twitter.com/pytormal"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                twitter
-              </a> */}
+                <img
+                  rel="noopener noreferrer"
+                  src={require("./Logos/twitter-line.png")}
+                  alt="cannot display"
+                />
+              </a>
 
-              {/* <a
-                class="fa fa-instagram"
+              <a
+                class="ri-instagram-line"
                 href="https://www.instagram.com/alexandrewmallory/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                instagram
-              </a> */}
+                <img
+                  rel="noopener noreferrer"
+                  src={require("./Logos/instagram-line.png")}
+                  alt="cannot display"
+                />
+              </a>
             </section>
           </nav>
         </div>
