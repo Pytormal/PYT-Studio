@@ -50,37 +50,36 @@ class Home extends React.Component {
           <nav Id="social">
             <h6>Lets Meet</h6>
             <section class="fa-do">
-              <a
+              {/* <a
                 class="fa fa-linkedin"
                 href="https://www.linkedin.com/in/mallory-alexandrew/"
                 target="_blank"
               >
                 linkedin
-              </a>
+              </a> */}
 
-              <a
-                class="fa fa-facebook"
-                href="https://www.facebook.com/pytormal"
-                target="_blank"
-              >
-                facebook
-              </a>
+              <Link to="https://facebook.com" class="ri-facebook-line">
+                <img
+                  src={require("./Logos/facebook-line.png")}
+                  alt="cannot display"
+                />
+              </Link>
 
-              <a
+              {/* <a
                 class="fa fa-twitter"
                 href="https://www.twitter.com/pytormal"
                 target="_blank"
               >
                 twitter
-              </a>
+              </a> */}
 
-              <a
+              {/* <a
                 class="fa fa-instagram"
                 href="https://www.instagram.com/alexandrewmallory/"
                 target="_blank"
               >
                 instagram
-              </a>
+              </a> */}
             </section>
           </nav>
         </div>
