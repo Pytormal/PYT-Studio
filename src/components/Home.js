@@ -58,12 +58,16 @@ class Home extends React.Component {
                 linkedin
               </a> */}
 
-              <a target="_blank" href="https:/facebook.com/pytormalstudios">  <img
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https:/facebook.com/pytormalstudios"
+              >
+                <img
                   src={require("./Logos/facebook-line.png")}
                   alt="cannot display"
-                /></a>
-              
-           
+                />
+              </a>
 
               {/* <a
                 class="fa fa-twitter"
