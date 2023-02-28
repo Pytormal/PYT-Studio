@@ -51,7 +51,7 @@ class Socials extends React.Component {
                 {/* Instagram */}
                 <a
                   class="ri-instagram-line"
-                  href="https://www.instagram.com/alexandrewmallory/"
+                  href="https://www.instagram.com/pytormal_studios/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -67,7 +67,7 @@ class Socials extends React.Component {
                 {/* Discord */}
                 <a
                   class="ri-discord-line"
-                  href="https://www.instagram.com/alexandrewmallory/"
+                  href="https://discord.com/channels/@pytormal#9884"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -80,7 +80,7 @@ class Socials extends React.Component {
                 {/* Github */}
                 <a
                   class="ri-github-line"
-                  href="https://www.instagram.com/alexandrewmallory/"
+                  href="https://github.com/Pytormal"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -93,7 +93,7 @@ class Socials extends React.Component {
                 {/* Twitch */}
                 <a
                   class="ri-twitch-line"
-                  href="https://www.instagram.com/alexandrewmallory/"
+                  href="https://twitch.tv/Pytormal"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -106,7 +106,7 @@ class Socials extends React.Component {
                 {/* Youtube */}
                 <a
                   class="ri-youtube-line"
-                  href="https://www.instagram.com/alexandrewmallory/"
+                  href="https://www.youtube.com/@pytormal"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
