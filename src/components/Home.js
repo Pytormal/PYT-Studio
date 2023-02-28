@@ -47,62 +47,7 @@ class Home extends React.Component {
             <Link to="/timers">Timers</Link> */}
             <Link to="/video-gallery">Videos</Link>
           </div>
-          {/* <nav Id="social">
-            <h6>Lets Meet</h6>
-            <section class="fa-do">
-              <a
-                class="ri-linkedin-line"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/mallory-alexandrew/"
-              >
-                <img
-                  rel="noopener noreferrer"
-                  src={require("./Logos/linkedin-line.png")}
-                  alt="cannot display"
-                />
-              </a>
-
-              <a
-                class="ri-facebook-line"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.facebook.com/pytormalstudios/"
-              >
-                <img
-                  rel="noopener noreferrer"
-                  src={require("./Logos/facebook-line.png")}
-                  alt="cannot display"
-                />
-              </a>
-
-              <a
-                class="ri-twitter-line"
-                href="https://www.twitter.com/pytormal/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  rel="noopener noreferrer"
-                  src={require("./Logos/twitter-line.png")}
-                  alt="cannot display"
-                />
-              </a>
-
-              <a
-                class="ri-instagram-line"
-                href="https://www.instagram.com/alexandrewmallory/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  rel="noopener noreferrer"
-                  src={require("./Logos/instagram-line.png")}
-                  alt="cannot display"
-                />
-              </a>
-            </section>
-          </nav> */}
+         
         </div>
       </div>
     );
