@@ -7,6 +7,7 @@ import logout from "./components/utils/logout";
 import Home from "./components/Home";
 import Song from "./components/Song";
 import ListSongs from "./components/ListSongs";
+import Socials from "./components/utils/Social Media/socials"
 import UploadSongs from "./components/forms/MusicForm";
 import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
@@ -30,6 +31,7 @@ import "./components/styles/polls.css";
 import "./components/styles/video-gallery.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
+import "./components/styles/socials.css"
 
 function App() {
   return (
@@ -38,22 +40,23 @@ function App() {
         <section className="all-links">
           <section className="left-links links">
             <Link to="/">Home</Link>
-            <Link to="/register">Register Here</Link> {/* does not work*/}
+            {/* <Link to="/register">Register Here</Link> does not work */}
             <Link to="/login" onClick={logout}>
               Log Out
             </Link>
             <Link to="/songs_list">Songs</Link> {/* songs used in videos*/}
+            <Link to="/socials">Social Media</Link>
           </section>
           <section className="left-links2 links">
-            <Link to="/login">Login</Link> {/* does not work*/}
-            <Link to="/polls-hub">Polls</Link>{" "}
+            {/* <Link to="/login">Login</Link> does not work */}
+            {/* <Link to="/polls-hub">Polls</Link> */}
             {/*used for getting client info*/}
             {/* <Link to="/timers">Timers</Link>  */}
             {/* <Link to="/upload-song">Upload Songs here</Link> */}
             <Link to="/video-gallery">Videos</Link>
-            
+            <Link to="/socials">Social Media</Link>
           </section>
-    
+
           {/* <section id="duo">  <MessageForm /></section> */}
         </section>
 
@@ -64,6 +67,9 @@ function App() {
             </Route>
             <Route exact path="/songs_list">
               <ListSongs props={ListSongs} />
+            </Route>
+            <Route path="/socials">
+              <Socials/>
             </Route>
 
             <Route path="/video-gallery">

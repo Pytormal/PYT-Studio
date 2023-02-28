@@ -30,7 +30,7 @@ class Home extends React.Component {
                   this was a former webapp that was created for overlays for
                   live streaming and recording. with Pytormal domain bought
                   already, it still is a good name, so. the Domain will now be
-                  used for:{" "}
+                  used for:
                   <p>
                     Cinematography and Photography business for Alex Andrew and
                     name of Business is Pytormal's Studio
@@ -47,7 +47,7 @@ class Home extends React.Component {
             <Link to="/timers">Timers</Link> */}
             <Link to="/video-gallery">Videos</Link>
           </div>
-          <nav Id="social">
+          {/* <nav Id="social">
             <h6>Lets Meet</h6>
             <section class="fa-do">
               <a
@@ -102,7 +102,7 @@ class Home extends React.Component {
                 />
               </a>
             </section>
-          </nav>
+          </nav> */}
         </div>
       </div>
     );
