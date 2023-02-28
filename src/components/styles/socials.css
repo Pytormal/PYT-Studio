@@ -1,19 +1,22 @@
 #social {
-  margin: 6rem 2em 5em 2em;
-  padding: 2rem;
+  padding: 0.2rem;
   color: rgba(74, 58, 153, 0.859);
-   size:2rem
+  size: 2rem;
 }
 h6 {
   font-size: 2rem;
 }
 .fa-do a {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; */
   
 }
 
-.fa-do a img{
-     filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+.fa-do a img {
+  filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%);
+  width: 10rem;
+  height: 10rem;
+  margin:4rem 6rem;
 }
