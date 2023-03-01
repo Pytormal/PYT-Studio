@@ -13,7 +13,7 @@ html {
   padding: 2rem;
 
   box-shadow: 2rem 5rem 8rem 9rem rgba(115, 207, 11, 0.12),
-    2rem 5rem 8rem 2rem rgba(190, 21, 21, 0.24);
+    2rem 5rem 8rem 2rem rgba(70, 21, 21, 0.24);
   border-radius: 6px;
   color: green;
 }
@@ -26,7 +26,7 @@ h5 {
 
 #parkey {
   padding: 2rem;
-  color: rgb(68, 68, 200);
+  color: rgb(68, 30, 200);
 }
 
 ::-webkit-scrollbar {
