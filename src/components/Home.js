@@ -17,7 +17,7 @@ class Home extends React.Component {
             <h1> Welcome to Pytormal's Studio</h1>
             {/*  <span id="WelcomeUser">{`${this.state.user.user_name},`}</span>
           <p className="home-p">what would you like to do?</p> */}
-<section>
+<section class="featured" >
             <h2> a collection of Alex Andrew's art</h2>
 <h4>featured video</h4>
 <iframe width="560"
