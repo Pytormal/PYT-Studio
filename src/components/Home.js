@@ -20,7 +20,8 @@ class Home extends React.Component {
 <section>
             <h2> a collection of Alex Andrew's art</h2>
 <h4>featured video</h4>
-
+<iframe width="560"
+height="315" src="https://www.youtube.com/embed/1_K_QsMvzVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </section>
 
