@@ -18,8 +18,8 @@
 }
 
 .featured iframe{
-  height: 50em;
-  width: 50em;
+  height: 40em;
+  width: auto;
   margin: 1rem 2em 5em 2em;
   padding: 2rem;
 }
