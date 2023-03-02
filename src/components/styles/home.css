@@ -17,13 +17,13 @@
   display: none;
 }
 
-.featured iframe{
-  height: auto;
-  width: auto;
+.featured iframe {
+  height: 50%;
+  width: 88%;
   margin: 1rem 2em 5em 2em;
   padding: 2rem;
 }
 
 #collection {
-margin-bottom: 3em;
-} 
+  margin-bottom: 3em;
+}
