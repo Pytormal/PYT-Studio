@@ -17,11 +17,11 @@
   display: none;
 }
 
-.featured{
+.featured iframe{
 margin:0,6rem,0,0;
-height:72rem
+height:50rem;
 }
 
 #collection {
-margin-bottom: 4em;
+margin-bottom: 3em;
 } 

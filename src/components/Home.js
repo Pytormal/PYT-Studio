@@ -51,7 +51,7 @@ height="315" src="https://www.youtube.com/embed/1_K_QsMvzVY" title="YouTube vide
             {/* <Link to="/Polls-hub">Polls</Link>
              <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link> */}
-            <Link to="/video-gallery">Videos</Link>
+           
           </div>
          
         </div>

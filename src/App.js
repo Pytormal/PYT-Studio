@@ -45,6 +45,7 @@ function App() {
               Log Out
             </Link>
             <Link to="/songs_list">Songs</Link> {/* songs used in videos*/}
+            <Link to="/video-gallery">Videos</Link>
             <Link to="/socials">Social Media</Link>
           </section>
           <section className="left-links2 links">
@@ -69,7 +70,7 @@ function App() {
               <ListSongs props={ListSongs} />
             </Route>
             <Route path="/socials">
-              <Socials/>
+              <Socials />
             </Route>
 
             <Route path="/video-gallery">
