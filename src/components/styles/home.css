@@ -18,8 +18,10 @@
 }
 
 .featured iframe{
-margin:0,6rem,0,0;
-height:50rem;
+  height: 50rem;
+  width: 100em;
+  margin: 1rem 2em 5em 2em;
+  padding: 2rem;
 }
 
 #collection {
