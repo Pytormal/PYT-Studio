@@ -17,13 +17,19 @@ class Home extends React.Component {
             <h1> Welcome to Pytormal's Studio</h1>
             {/*  <span id="WelcomeUser">{`${this.state.user.user_name},`}</span>
           <p className="home-p">what would you like to do?</p> */}
-<section class="featured" >
-            <h2 id="collection"> a collection of Alex Andrew's art</h2>
-<h4>featured video</h4>
-<iframe width="560"
-height="315" src="https://www.youtube.com/embed/1_K_QsMvzVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-</section>
+            <section class="featured">
+              <h2 id="collection"> a collection of Alex Andrew's art</h2>
+              <h4>featured video</h4>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/1_K_QsMvzVY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </section>
 
             <section Id="placeholder">
               <h5> a little background:</h5>
@@ -51,9 +57,7 @@ height="315" src="https://www.youtube.com/embed/1_K_QsMvzVY" title="YouTube vide
             {/* <Link to="/Polls-hub">Polls</Link>
              <Link to="/upload-song">Upload Songs here</Link>
             <Link to="/timers">Timers</Link> */}
-           
           </div>
-         
         </div>
       </div>
     );
