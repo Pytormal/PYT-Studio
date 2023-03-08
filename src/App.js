@@ -47,7 +47,7 @@ function App() {
             </Link>
             <Link to="/songs_list">Songs</Link> {/* songs used in videos*/}
             <Link to="/video-gallery">Videos</Link>
-<Link to="/photo-gallery">photos</Link>
+<Link to="/photo-gallery">Photos</Link>
             <Link to="/socials">Social Media</Link>
           </section>
           <section className="left-links2 links">
