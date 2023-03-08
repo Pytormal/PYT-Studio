@@ -25,11 +25,11 @@ class Photogallery extends React.Component {
               
  <img
                     rel="noopener noreferrer"
-                    src={require("./photos/self-portrait-at-work1.png")}
+                    src={require("./utils/photos/self-portrait-at-work1.png")}
                     alt="cannot display"
                   />
 rel="noopener noreferrer"
-                    src={require("./photos/self-portrait-at-work2.png")}
+                    src={require(".utils//photos/self-portrait-at-work2.png")}
                     alt="cannot display"
 />
             </section>
