@@ -42,8 +42,8 @@ function App() {
           <section className="left-links links">
             <Link to="/">Home</Link>
             {/* <Link to="/register">Register Here</Link> does not work */}
-         {/*   <Link to="/login" onClick={logout}> */} 
-              Log Out
+         {/*   <Link to="/login" onClick={logout}>
+              Log Out */} 
             </Link>
             <Link to="/songs_list">Songs</Link> {/* songs used in videos*/}
             <Link to="/video-gallery">Videos</Link>
