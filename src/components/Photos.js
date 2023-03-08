@@ -21,7 +21,7 @@ class Photogallery extends React.Component {
         <section id="streaming">
           <section id="split-stream-comments">
             <section className="stream-video">
-              <p> page in progress </>
+              <p> page in progress </p>
               
  
             </section>
