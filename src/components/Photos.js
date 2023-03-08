@@ -23,7 +23,15 @@ class Photogallery extends React.Component {
             <section className="stream-video">
               <p> page in progress </p>
               
- 
+ <img
+                    rel="noopener noreferrer"
+                    src={require("./photos/self-portrait-at-work1.png")}
+                    alt="cannot display"
+                  />
+rel="noopener noreferrer"
+                    src={require("./photos/self-portrait-at-work2.png")}
+                    alt="cannot display"
+/>
             </section>
             {/* <section id="single">
               <MessageForm />
