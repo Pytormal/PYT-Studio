@@ -13,6 +13,7 @@ import RegisterForm from "./components/forms/RegisterForm";
 import LoginForm from "./components/forms/LoginForm";
 import PollHome from "./components/PollHome";
 import Videogallery from "./components/Video-gallery";
+import Photogallery from "./components/Photos";
 // import MessageForm from "./components/forms/MessageForm"
 import { Min5Timer, Min10Timer, Min30Timer } from "./components/timer.js";
 
@@ -41,11 +42,12 @@ function App() {
           <section className="left-links links">
             <Link to="/">Home</Link>
             {/* <Link to="/register">Register Here</Link> does not work */}
-            <Link to="/login" onClick={logout}>
+           <Link to="/login" onClick={logout}>
               Log Out
             </Link>
             <Link to="/songs_list">Songs</Link> {/* songs used in videos*/}
             <Link to="/video-gallery">Videos</Link>
+<Link to="/photo-gallery">Photos</Link>
             <Link to="/socials">Social Media</Link>
           </section>
           <section className="left-links2 links">
@@ -55,6 +57,7 @@ function App() {
             {/* <Link to="/timers">Timers</Link>  */}
             {/* <Link to="/upload-song">Upload Songs here</Link> */}
             <Link to="/video-gallery">Videos</Link>
+<Link to="/photo-gallery">Photos</Link>
             <Link to="/socials">Social Media</Link>
           </section>
 
@@ -76,6 +79,11 @@ function App() {
             <Route path="/video-gallery">
               <Videogallery />
             </Route>
+
+<Route path="/photo-gallery">
+              <Photogallery />
+            </Route>
+
             <Route path="/polls-hub">
               <PollHome />
             </Route>
