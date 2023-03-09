@@ -32,7 +32,8 @@ import "./components/styles/polls.css";
 import "./components/styles/video-gallery.css";
 import "./components/styles/dualscreen.css";
 import "./components/styles/responsive.css";
-import "./components/styles/socials.css"
+import "./components/styles/photos.css"
+import "./components/styles/socials.css";
 
 function App() {
   return (

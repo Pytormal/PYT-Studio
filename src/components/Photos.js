@@ -21,17 +21,52 @@ class Photogallery extends React.Component {
         <section id="streaming">
           <section id="split-stream-comments">
             <section className="stream-video">
-              <p> page in progress </p>
-              
- <img
-                    rel="noopener noreferrer"
-                    src={require("./utils/photos/self-portrait-at-work1.png")}
-                    alt="cannot display"
-                  />
-rel="noopener noreferrer"
-                    src={require(".utils//photos/self-portrait-at-work2.png")}
-                    alt="cannot display"
-/>
+              <h1>Portraits 3:2</h1>
+              <img
+                className="img1"
+                rel="noopener noreferrer"
+                src={require("./utils/Photos/self-portrait-at-work1.jpg")}
+                alt="cannot display"
+              />
+              <img
+                className="img1"
+                rel="noopener noreferrer"
+                src={require("./utils//Photos/self-portrait-at-work2.jpg")}
+                alt="cannot display"
+              />
+
+              <img
+                className="img1"
+                rel="noopener noreferrer"
+                src={require("./utils/Photos/clarence-elliot-portrait-at-work.jpg")}
+                alt="cannot display"
+              />
+              <img
+                className="img1"
+                rel="noopener noreferrer"
+                src={require("./utils//Photos/clarence-elliot-portrait-at-work1.jpg")}
+                alt="cannot display"
+              />
+            </section>
+
+            <section className="stream-video">
+              <h1>Portaits 16:9</h1>
+              <img
+                className="img1"
+                rel="noopener noreferrer"
+                src={require("./utils/Photos/alexandrew-portrait.jpg")}
+                alt="cannot display"
+              />
+            </section>
+
+            <section className="stream-video">
+              <h1>Animals 3:2</h1>
+              <img
+                className="img1"
+                rel="noopener noreferrer"
+                src={require("./utils/Photos/Lezzi-portrait.jpg")}
+                alt="cannot display"
+              />
             </section>
             {/* <section id="single">
               <MessageForm />
