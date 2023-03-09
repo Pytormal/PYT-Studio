@@ -19,9 +19,7 @@ iframe {
   border-radius: 6px;
 }
 
-.stream-video {
-  height: 80vh;
-}
+
 
 #duo {
   display: none;
