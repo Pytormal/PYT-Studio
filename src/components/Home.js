@@ -27,6 +27,7 @@ class Home extends React.Component {
               <h4>featured video</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/mYAAy2D3Yoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
+</div>
 
             <section Id="placeholder">
               <h5> a little background:</h5>
