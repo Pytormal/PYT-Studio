@@ -17,7 +17,7 @@ class Home extends React.Component {
             <h1> Welcome to Pytormal's Studio</h1>
             {/*  <span id="WelcomeUser">{`${this.state.user.user_name},`}</span>
           <p className="home-p">what would you like to do?</p> */}
-<div class="container">
+
         <h2>My Projects</h2>
 
         </section>
@@ -27,7 +27,6 @@ class Home extends React.Component {
               <h4>featured video</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/mYAAy2D3Yoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
-</div>
 
             <section Id="placeholder">
               <h5> a little background:</h5>
