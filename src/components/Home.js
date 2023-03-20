@@ -52,6 +52,7 @@ class Home extends React.Component {
             <span class="sr-only">Next</span>
           </a>
         </div>
+</div>
       
 
       <section class="horizontal-scroll">
@@ -65,7 +66,7 @@ class Home extends React.Component {
              
             </li>
           </ul>
-          
+          </div>
  
         </section>
       </section>
