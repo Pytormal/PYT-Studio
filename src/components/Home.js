@@ -109,7 +109,7 @@ class Home extends React.Component {
         <section class="top-row">
           <ul>
             <li><a href="">
-              <img src="https://picsum.photos/id/103/367/267" alt="1"></a>
+              <img src="https://picsum.photos/id/103/367/267" alt="1" /></a>
               <h3>
                 <a
                   href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html"
