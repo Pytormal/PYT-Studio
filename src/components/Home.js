@@ -20,7 +20,7 @@ class Home extends React.Component {
 
 
 
-        <section class="container">
+        <div class="container">
         <h2>My Projects</h2>
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
