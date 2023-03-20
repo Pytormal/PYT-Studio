@@ -37,12 +37,6 @@ class Home extends React.Component {
               </a>
             </div>
 
-            <div class="item">
-              <a href=""
-                ><img src="https://picsum.photos/id/104/367/267" alt="2"
-              /></a>
-            </div>
-          </div>
 
          
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
