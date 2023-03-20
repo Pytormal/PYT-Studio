@@ -86,7 +86,7 @@ class Home extends React.Component {
                 <img src="https://picsum.photos/id/390/367/267" alt="8"
               /></a>
             </div>
-          </div>
+          
 
           
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
