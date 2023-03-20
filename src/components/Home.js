@@ -71,14 +71,7 @@ class Home extends React.Component {
              
             </li>
           </ul>
-          <ul>
-            <li>
-              <img src="https://picsum.photos/id/104/367/267" alt="2" />
-              <h3>
-                <a href="other pages/Project 2.html">Project 2</a>
-              </h3>
-            </li>
-          </ul>
+          
  
         </section>
       </section>
