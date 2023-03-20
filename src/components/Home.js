@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+} from 'mdb-react-ui-kit';
 
 import "./styles/timer.css";
 
@@ -19,6 +23,30 @@ class Home extends React.Component {
           <p className="home-p">what would you like to do?</p> */}
 
 
+
+ 
+    <MDBCarousel showControls showIndicators>
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={1}
+        src='https://mdbootstrap.com/img/new/slides/041.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={2}
+        src='https://mdbootstrap.com/img/new/slides/042.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='w-100 d-block'
+        itemId={3}
+        src='https://mdbootstrap.com/img/new/slides/043.jpg'
+        alt='...'
+      />
+    </MDBCarousel>
+  );
+}
 
 
             <section class="featured">
