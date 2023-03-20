@@ -18,7 +18,13 @@ class Home extends React.Component {
             {/*  <span id="WelcomeUser">{`${this.state.user.user_name},`}</span>
           <p className="home-p">what would you like to do?</p> */}
 
+
+
         
+
+
+
+
             <section class="featured">
               <h2 id="collection"> a collection of Alex Andrew's art</h2>
               <h4>featured video</h4>
