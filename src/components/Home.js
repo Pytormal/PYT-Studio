@@ -182,6 +182,8 @@ class Home extends React.Component {
 
 
 
+
+
             <section class="featured">
               <h2 id="collection"> a collection of Alex Andrew's art</h2>
               <h4>featured video</h4>
