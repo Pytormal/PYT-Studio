@@ -21,15 +21,7 @@ class Videogallery extends React.Component {
         <section id="streaming">
           <section id="split-stream-comments">
             <section className="stream-video">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/fzfF3t8APts"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UUB3FupnpsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
               <iframe
                 width="756"
